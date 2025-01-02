@@ -3,10 +3,11 @@ import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { TabsModule } from 'primeng/tabs';
+import { LatestProjectsComponent } from './latest-projects/latest-projects.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, CommonModule, TabsModule],
+  imports: [NavbarComponent, FooterComponent, CommonModule, TabsModule, LatestProjectsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

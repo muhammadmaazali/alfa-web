@@ -1,0 +1,103 @@
+.projects-latest {
+    .project-leftside {
+        background-color: #263745;
+    }
+    .project-rightside {
+        background-color: #f2f2f2;
+    }
+}
+.projects-latest {
+    display: flex;
+    flex-wrap: wrap; /* Allows the divs to wrap on smaller screens */
+    width: 100%;
+    min-height: 690px;
+}
+
+.project-leftside,
+.project-rightside {
+    flex: 1; /* Each div will take up equal space */
+    min-width: 300px; /* Minimum width to ensure content is readable */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Optional: Add some padding and alignment for better appearance */
+.project-leftside {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #263745;
+}
+
+.project-rightside {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-leftside,
+    .project-rightside {
+        flex: 100%; /* Each div takes full width on smaller screens */
+    }
+}
+.leftsideinner {
+    right: 0;
+    padding-right: 12rem;
+}
+.img-box {
+    width: 580px;
+    height: 348px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+    }
+}
+.project-rightside {
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 800;
+        margin: 0;
+    }
+}
+.details {
+    dt {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    dd {
+        font-weight: 600;
+        grid-column: 2;
+        line-height: 1.25em;
+        color: #002438;
+    }
+}
+.projectimg-list {
+    li {
+        flex: 1;
+    }
+    img {
+        width: 153px;
+        height: 107px;
+        max-width: 100%;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+    p {
+        font-size: 13px;
+        line-height: 1.25em;
+        font-weight: 600;
+        margin-top: 1em;
+        color: #000;
+    }
+}
