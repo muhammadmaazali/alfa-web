@@ -1,0 +1,107 @@
+// .navbar {
+//     background: transparent;
+//     position: absolute;
+//     right: 0;
+//     top:20px;
+//     left: 0;
+//     z-index: 9;
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//   }
+//
+// ul a{
+//     font-size: 18px;
+// }
+.about-main-banner {
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    gap: 0.75rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+//
+// p{
+//     font-weight: 500;
+//     line-height: 1.5;
+//     letter-spacing: 1.5px;
+// }
+//
+//
+// h1{
+//     font-weight: 800;
+//     font-size: clamp(2rem, 3vw, 2.5rem);
+//     text-transform: uppercase;
+//     line-height: 1em;
+// }
+//
+
+::ng-deep {
+    .header-menubar {
+        .p-menubar {
+            width: 100%;
+            gap: 3rem;
+            background: transparent;
+            border: 0;
+        }
+    }
+}
+
+/* Add background image to the banner */
+.banner-image {
+    background-image: url("https://nmdc-group.com/assets/media/SPMymd__fi-1600.webp");
+    background-size: cover;
+    background-position: center;
+    // height: calc(100vh - 100px);
+    height: 100vh;
+    position: relative;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+/* Add the overlay layer */
+// .banner-image::after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-image: linear-gradient(to bottom, #031e2d 24%, rgba(0, 36, 56, 0.08));
+//     mix-blend-mode: multiply;
+//     opacity: 0.2;
+//     z-index: 1;
+// }
+/* Make the menu absolute */
+.header-menubar {
+    // position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Additional styling for the logo if needed */
+.logo {
+    max-height: 50px;
+}
+
+.cd-headline {
+    font-weight: 800;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    text-transform: uppercase;
+    line-height: 1em;
+    span {
+    }
+    span + span {
+        color: #009de0;
+    }
+}
+.hero-section {
+    p {
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+    }
+}
