@@ -8,26 +8,23 @@
 }
 .projects-latest {
     display: flex;
-    flex-wrap: wrap; /* Allows the divs to wrap on smaller screens */
+    flex-wrap: wrap;
     width: 100%;
     min-height: 690px;
 }
 
 .project-leftside,
 .project-rightside {
-    flex: 1; /* Each div will take up equal space */
-    min-width: 300px; /* Minimum width to ensure content is readable */
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
 }
 
-/* Optional: Add some padding and alignment for better appearance */
 .project-leftside {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     background-color: #263745;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .project-rightside {
@@ -42,20 +39,27 @@
 @media (max-width: 768px) {
     .project-leftside,
     .project-rightside {
-        flex: 100%; /* Each div takes full width on smaller screens */
+        flex: 100%;
     }
 }
 .leftsideinner {
-    right: 0;
-    padding-right: 12rem;
+    width: 380px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    height: 280px;
+    gap: 2rem;
 }
 .img-box {
-    width: 580px;
-    height: 348px;
     border-radius: 1.25rem;
     overflow: hidden;
     img {
+        height: auto;
         max-width: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
     }
 }
 .project-rightside {

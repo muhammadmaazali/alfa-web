@@ -142,3 +142,92 @@ body {
     --clr-link-hover: color-mix(in lab, var(--clr-accent), black 50%);
     --clr-error: #e92b0e;
 }
+
+.button.cta,
+button.cta {
+    outline-offset: 1px;
+    --_padding-inline: clamp(0.75rem, 1vw, 1rem);
+    --_surface: var(--clr-whiter);
+    --_surface-hover: white;
+    --_icon: var(--clr-accent);
+    --_text: var(--clr-daintree);
+    color: var(--_text) !important;
+    background-color: var(--_surface);
+    border: 0;
+    display: inline-flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-items: center;
+    vertical-align: middle;
+    gap: 0.75rem;
+    line-height: 1.25rem;
+    padding-inline: var(--_padding-inline);
+    padding-block: clamp(0.5rem, 1vw, 0.75rem);
+    min-height: clamp(44px, 3.6vw, 52px);
+    transition: 0.2s ease;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    cursor: pointer;
+}
+
+svg.icon {
+    font-size: 1rem;
+    width: 1em;
+    line-height: 1em;
+    display: block;
+}
+
+.branded.slab::before,
+[data-brand].slab::before {
+    content: "";
+    display: block;
+    height: 80px;
+    aspect-ratio: 140 / 160;
+    // background-image: url("../../../../assets/images/slab-aqua.svg");
+    background-image: url("../src/assets/images/slab-aqua.svg");
+    background-size: cover;
+}
+.cta:not(button),
+a.cta {
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    gap: 0.75rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    font-size: 15px;
+}
+.cta:not(button):not(.button):hover,
+a.cta:not(.button):hover {
+    color: var(--clr-blue);
+}
+.branded.slab,
+[data-brand].slab {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    align-items: center;
+    gap: 1em;
+    min-height: 100px;
+    font-family: "Montserrat-Arabic", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    text-transform: uppercase;
+    line-height: 1em;
+}
+@media (min-width: 1040px) {
+    .branded.slab::before,
+    [data-brand].slab::before {
+        height: 100px;
+    }
+}
+
+@media (min-width: 1040px) {
+    .branded.slab::before,
+    [data-brand].slab::before {
+        height: 140px;
+    }
+}
