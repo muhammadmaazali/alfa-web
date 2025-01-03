@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PrimeNgModule } from './shared/prime-ng/prime-ng.module';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { NavbarComponent } from './AlfaMarine/components/navbar/navbar.component';
+import { FooterComponent } from './AlfaMarine/components/footer/footer.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PrimeNgModule],
+  imports: [RouterOutlet, PrimeNgModule,NavbarComponent,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

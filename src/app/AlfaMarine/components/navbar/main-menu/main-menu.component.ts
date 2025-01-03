@@ -7,11 +7,12 @@ import { MenuItemContent } from 'primeng/menu';
 import { OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Ripple } from 'primeng/ripple';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-main-menu',
   standalone: true,
   imports: [MenuItemContent, Menubar, MainMenuComponent,
-    Menubar, Ripple, CommonModule],
+    Menubar, Ripple, CommonModule, RouterModule],
   templateUrl: './main-menu.component.html',
   styleUrl: './main-menu.component.scss'
 })
@@ -25,14 +26,14 @@ export class MainMenuComponent implements OnInit {
         label: 'Who We Are ',
         items:
           [
-            { label: 'About ALFA	' },
-            { label: 'Mission and Vision' },
-            { label: 'Core Values' },
-            { label: 'Leadership' },
-            { label: 'Our Culture' },
-            { label: 'Our Strategy ' },
-            { label: 'Ethics and Compliance ' },
-            { label: 'Accreditations  ' },
+            { label: 'About ALFA	', route: '/about-alfa' },
+            { label: 'Mission and Vision', route: '/mission-and-vision' },
+            { label: 'Core Values', route: '/core-values' },
+            { label: 'Leadership', route: '/leadership' },
+            { label: 'Our Culture', route: '/our-culture' },
+            { label: 'Our Strategy ', route: '/our-strategy' },
+            { label: 'Ethics and Compliance ', route: '/ethics-and-compliance' },
+            { label: 'Accreditations  ', route: '/accreditations' },
           ]
       },
       {
@@ -43,23 +44,23 @@ export class MainMenuComponent implements OnInit {
               label: 'Our Solutions',
               items:
                 [
-                  { label: ' Modular buildings solutions' },
-                  { label: 'Living Quarters Refurbishment, Upgrade & Conversion solutions ' },
-                  { label: ' Repair & Maintenance of HVAC, Piping & Electrical Systems' },
-                  { label: '  Rig & Ship Repair solutions' },
+                  { label: ' Modular buildings solutions', route: '/modular-buildings-solutions'  },
+                  { label: 'Living Quarters Refurbishment, Upgrade & Conversion solutions ', route: '/living-quarters-refurbishment' },
+                  { label: ' Repair & Maintenance of HVAC, Piping & Electrical Systems', route: '/repair-and-maintenance-of-hvac' },
+                  { label: '  Rig & Ship Repair solutions', route: '/rig-and-ship-repair-solutions' },
                 ]
             },
             {
               label: 'Our Core Services',
               items:
                 [
-                  { label: '  Welding And Fabrication Services' },
-                  { label: ' Abrasive Blasting and Painting Services  ' },
-                  { label: ' Architectural, HVAC, Electrical, Plumbing, & Carpentry' },
-                  { label: ' Thermal And Acoustic Insulation Services ' },
+                  { label: '  Welding And Fabrication Services', route: '/welding-and-fabrication-services' },
+                  { label: ' Abrasive Blasting and Painting Services  ', route: '/abrasive-blasting-and-painting-services' },
+                  { label: ' Architectural, HVAC, Electrical, Plumbing, & Carpentry', route: '/architectural-hvac-electrical' },
+                  { label: ' Thermal And Acoustic Insulation Services ', route: '/thermal-and-acoustic-insulation-services' },
                 ]
             },
-            { label: 'Our Product / Supplies' },
+            { label: 'Our Product / Supplies' ,route:'/our-oroduct-or-supplies' },
           ],
       },
       {

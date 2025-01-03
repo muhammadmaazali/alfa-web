@@ -5,8 +5,8 @@
                 class="logo img-fluid" alt="Logo">
         </ng-template>
         <ng-template #item let-item let-root="root">
-            <a pRipple class="flex items-center p-menubar-item-link">
-                <span>{{ item.label }}</span>
+            <a pRipple class="flex items-center p-menubar-item-link" [routerLink]="item?.route">
+                <span >{{ item.label }}</span>
                 <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }" [value]="item.badge" />
                 <span *ngIf="item.shortcut"
                     class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">{{
