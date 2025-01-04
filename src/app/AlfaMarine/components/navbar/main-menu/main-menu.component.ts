@@ -60,16 +60,16 @@ export class MainMenuComponent implements OnInit {
                   { label: ' Thermal And Acoustic Insulation Services ', route: '/thermal-and-acoustic-insulation-services' },
                 ]
             },
-            { label: 'Our Product / Supplies' ,route:'/our-oroduct-or-supplies' },
+            { label: 'Our Product / Supplies' ,route:'/our-product-or-supplies' },
           ],
       },
       {
         label: 'Sustainability ',
         items:
           [
-            { label: 'Environmental Responsibility' },
-            { label: 'Health, Safety & Environmental Policy ' },
-            { label: 'Quality Assurance Policy' },
+            { label: 'Environmental Responsibility',route:'/environmental-responsibility' },
+            { label: 'Health, Safety & Environmental Policy ',route:'/health-safety-environmental-policy' },
+            { label: 'Quality Assurance Policy', route:'/quality-assurance-policy' },
           ]
       },
       {
@@ -85,10 +85,10 @@ export class MainMenuComponent implements OnInit {
         label: 'Contact us ',
         items:
           [
-            { label: 'Commercial Inquiries' },
-            { label: 'Careers ' },
-            { label: 'Become a Supplier' },
-            { label: 'Speak UP' },
+            { label: 'Commercial Inquiries',route:'/commercial-inquiries' },
+            { label: 'Careers ',route:'/careers' },
+            { label: 'Become a Supplier',route:'/become-a-supplier' },
+            { label: 'Speak UP',route:'/speak-up' },
           ]
       },
     ];
