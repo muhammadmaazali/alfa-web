@@ -1,18 +1,3 @@
-// .navbar {
-//     background: transparent;
-//     position: absolute;
-//     right: 0;
-//     top:20px;
-//     left: 0;
-//     z-index: 9;
-//     padding-top: 20px;
-//     padding-bottom: 20px;
-//   }
-//
-// ul a{
-//     font-size: 18px;
-// }
-
 .about-main-banner {
     align-items: center;
     color: inherit;
@@ -22,24 +7,9 @@
     transition: 0.2s ease;
 }
 
-.my-5 a{
-    color:white;
+.my-5 a {
+    color: white;
 }
-//
-// p{
-//     font-weight: 500;
-//     line-height: 1.5;
-//     letter-spacing: 1.5px;
-// }
-//
-//
-// h1{
-//     font-weight: 800;
-//     font-size: clamp(2rem, 3vw, 2.5rem);
-//     text-transform: uppercase;
-//     line-height: 1em;
-// }
-//
 
 ::ng-deep {
     .header-menubar {
@@ -48,6 +18,7 @@
             gap: 3rem;
             background: transparent;
             border: 0;
+            padding-top: 2rem;
         }
     }
 }
@@ -57,30 +28,26 @@
     background-image: url("https://nmdc-group.com/assets/media/SPMymd__fi-1600.webp");
     background-size: cover;
     background-position: center;
-    // height: calc(100vh - 100px);
-    height: 100vh;
+    min-height: 730px;
     position: relative;
-    padding-top: 2.5rem;
     padding-bottom: 2rem;
 }
 
 /* Add the overlay layer */
-// .banner-image::after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-image: linear-gradient(to bottom, #031e2d 24%, rgba(0, 36, 56, 0.08));
-//     mix-blend-mode: multiply;
-//     opacity: 0.2;
-//     z-index: 1;
-// }
+.banner-image::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #eeeeee 1%, rgba(0, 36, 56, 0.008));
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
 /* Make the menu absolute */
 .header-menubar {
-    // position: absolute;
     top: 20px;
     left: 20px;
     right: 20px;
@@ -97,6 +64,7 @@
     font-size: clamp(2rem, 3vw, 2.5rem);
     text-transform: uppercase;
     line-height: 1em;
+    font-family: "Montserrat-Arabic", sans-serif;
     span {
     }
     span + span {
@@ -109,4 +77,12 @@
         line-height: 1.5;
         letter-spacing: 1.5px;
     }
+}
+.cta:not(button):not(.button):hover,
+a.cta:not(.button):hover {
+    color: #7ad7ff;
+}
+.cta:not(button):not(.button):hover svg,
+a.cta:not(.button):hover svg {
+    color: #002438;
 }
