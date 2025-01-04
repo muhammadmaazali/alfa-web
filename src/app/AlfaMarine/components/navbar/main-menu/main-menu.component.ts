@@ -21,7 +21,7 @@ export class MainMenuComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      { label: 'Home' },
+      { label: 'Home' ,route:'/home'},
       {
         label: 'Who We Are ',
         items:
