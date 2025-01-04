@@ -101,11 +101,12 @@ article {
     height: auto;
     overflow: hidden;
     position: relative;
-}
-.img-div img {
-    width: 100%;
-    height: auto;
-    display: block;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+    }
 }
 .title {
     margin: 0;
@@ -113,6 +114,7 @@ article {
     font-weight: 600;
     color: #333;
     margin: 2rem 0;
+    transition: 0.12s ease;
 }
 article:hover .title {
     color: var(--clr-blue);
@@ -138,6 +140,9 @@ article:hover .title {
     text-align: center;
     line-height: 1.2;
     white-space: nowrap;
+}
+.tags.clean .tag.active {
+    background-color: var(--clr-blue);
 }
 .button.cta:hover,
 button.cta:hover {
