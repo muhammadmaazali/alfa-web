@@ -21,12 +21,17 @@ import { AbrasiveBlastingAndPaintingServicesComponent } from './AlfaMarine/compo
 import { ArchitecturalAndHVACComponent } from './AlfaMarine/components/architectural-and-hvac/architectural-and-hvac.component';
 import { ThermalAndAcousticInsulationServicesComponent } from './AlfaMarine/components/thermal-and-acoustic-insulation-services/thermal-and-acoustic-insulation-services.component';
 import { OurProductSuppliesComponent } from './AlfaMarine/components/our-product-supplies/our-product-supplies.component';
+import { EnvironmentalResponsibilityComponent } from './AlfaMarine/components/environmental-responsibility/environmental-responsibility.component';
+import { HealthSafetyAndEnvironmentalPolicyComponent } from './AlfaMarine/components/health-safety-and-environmental-policy/health-safety-and-environmental-policy.component';
+import { QualityAssurancePolicyComponent } from './AlfaMarine/components/quality-assurance-policy/quality-assurance-policy.component';
+import { CareersComponent } from './AlfaMarine/components/careers/careers.component';
+import { SPEAKUPComponent } from './AlfaMarine/components/speakup/speakup.component';
 
 export const routes: Routes = [
     { path: '', component: LandingPageComponent },
     { path: 'home', component: HomeComponent },
     { path: 'commercial-inquiries', component: CommercialInquiriesComponent },
-    { path: 'become-supplier', component: BecomeASupplierComponent },
+    { path: 'become-a-supplier', component: BecomeASupplierComponent },
     { path: 'about-alfa', component: AboutAlfaComponent },
     { path: 'mission-and-vision', component: MissionAndVisionComponent },
     { path: 'core-values', component: CoreValuesComponent },
@@ -34,6 +39,14 @@ export const routes: Routes = [
     { path: 'our-culture', component: OurCultureComponent },
     { path: 'our-strategy', component: OurStrategyComponent },
     { path: 'ethics-and-compliance', component: EthicsAndComplianceComponent },
+    { path: 'accreditations', component: AccreditationsComponent },
+    { path: 'environmental-responsibility', component: EnvironmentalResponsibilityComponent },
+    { path: 'health-safety-environmental-policy', component: HealthSafetyAndEnvironmentalPolicyComponent },
+    { path: 'quality-assurance-policy', component: QualityAssurancePolicyComponent },
+    { path: 'careers', component: CareersComponent },
+    { path: 'speak-up', component: SPEAKUPComponent },
+    { path: 'accreditations', component: AccreditationsComponent },
+    { path: 'accreditations', component: AccreditationsComponent },
     { path: 'accreditations', component: AccreditationsComponent },
     { path: 'modular-buildings-solutions', component: ModularBuildingsSolutionsComponent },
     { path: 'living-quarters-refurbishment', component: LivingQuartersRefurbishmentComponent },
@@ -43,5 +56,5 @@ export const routes: Routes = [
     { path: 'abrasive-blasting-and-painting-services', component: AbrasiveBlastingAndPaintingServicesComponent },
     { path: 'architectural-hvac-electrical', component: ArchitecturalAndHVACComponent },
     { path: 'thermal-and-acoustic-insulation-services', component: ThermalAndAcousticInsulationServicesComponent },
-    { path: 'our-oroduct-or-supplies', component: OurProductSuppliesComponent },
+    { path: 'our-product-or-supplies', component: OurProductSuppliesComponent },
 ];
