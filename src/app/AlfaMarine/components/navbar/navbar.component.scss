@@ -25,7 +25,7 @@
 
 /* Add background image to the banner */
 .banner-image {
-    background-image: url("https://nmdc-group.com/assets/media/SPMymd__fi-1600.webp");
+    background-image: url("../../../../assets/images/banner-image-bg.png");
     background-size: cover;
     background-position: center;
     min-height: 730px;
@@ -68,7 +68,7 @@
     span {
     }
     span + span {
-        color: #009de0;
+        color: #25e5ff;
     }
 }
 .hero-section {

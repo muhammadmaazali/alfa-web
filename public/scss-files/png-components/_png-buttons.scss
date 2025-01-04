@@ -50,17 +50,17 @@
 }
 
 .icon.blue {
-    color: var(--clr-blue);
+    color: var(--clr-blue) !important;
 }
 .icon.green {
-    color: var(--clr-green);
+    color: var(--clr-green) !important;
 }
 .icon.yellow {
-    color: var(--clr-yellow);
+    color: var(--clr-yellow) !important;
 }
 
 .icon.error {
-    color: var(--clr-error);
+    color: var(--clr-error) !important;
 }
 
 .cta:not(button),
