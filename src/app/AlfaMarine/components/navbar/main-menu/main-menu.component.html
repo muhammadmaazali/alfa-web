@@ -1,12 +1,12 @@
 <div class="container">
     <p-menubar class="header-menubar" [model]="items">
         <ng-template #start>
-            <img src="assets\ALFA LOGO\ALFA LOGO\Variation Size\1.5x\ALFAALFA FULL LOGO V2.1 WHITE@1.5x.png"
+            <img src="assets\ALFA LOGO\ALFA LOGO\Variation Size\1.5x\ALFAALFA LOGO V2.1 WHITE@1.5x.png"
                 class="logo img-fluid" alt="Logo">
         </ng-template>
         <ng-template #item let-item let-root="root">
             <a pRipple class="flex items-center p-menubar-item-link" [routerLink]="item?.route">
-                <span >{{ item.label }}</span>
+                <span>{{ item.label }}</span>
                 <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }" [value]="item.badge" />
                 <span *ngIf="item.shortcut"
                     class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">{{
