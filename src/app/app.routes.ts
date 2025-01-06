@@ -28,7 +28,7 @@ import { CareersComponent } from './AlfaMarine/components/careers/careers.compon
 import { SPEAKUPComponent } from './AlfaMarine/components/speakup/speakup.component';
 
 export const routes: Routes = [
-    { path: '', component: LandingPageComponent },
+    { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'commercial-inquiries', component: CommercialInquiriesComponent },
     { path: 'become-a-supplier', component: BecomeASupplierComponent },
