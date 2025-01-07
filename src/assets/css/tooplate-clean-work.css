@@ -398,15 +398,15 @@ strong {
   --move-final: calc(-50% + var(--offset));
   transform: translate3d(var(--move-initial), 0, 0);
   -webkit-animation: marquee 1s linear infinite;
-          animation: marquee 1s linear infinite;
+  animation: marquee 1s linear infinite;
   -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   opacity: 0;
 }
 
 .button--atlas:hover .marquee__inner {
   -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
   opacity: 1;
   transition-duration: 0.4s;
 }
@@ -499,7 +499,7 @@ strong {
   width: 60px;
   height: 60px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*---------------------------------------
@@ -956,7 +956,7 @@ strong {
   display: block;
   aspect-ratio: 1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.5s;
 }
 
@@ -1258,13 +1258,7 @@ strong {
 }
 
 .site-footer .logo {
-  /* background-color: var(--white-color); */
-  /* border-radius: var(--border-radius-large); */
-  /* width: 80px; */
-  height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  /* padding: 15px; */
+  width: 200px;
 }
 
 .site-footer-title,
@@ -1370,7 +1364,7 @@ strong {
   -webkit-animation:
     MoveUpInitial 0.2s forwards,
     MoveUpEnd 0.2s forwards 0.2s;
-          animation:
+  animation:
     MoveUpInitial 0.2s forwards,
     MoveUpEnd 0.2s forwards 0.2s;
 }
