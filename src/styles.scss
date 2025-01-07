@@ -32,6 +32,10 @@
 // @import "../public/scss-files/png-components/png-tooltip";
 // @import "../public/scss-files/png-components/read-view";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     // font-family: "Poppins-Regular", Arial, sans-serif;
     // font-size: 14px;

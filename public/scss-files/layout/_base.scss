@@ -92,3 +92,16 @@
 .ins-heading.sm::before {
     height: 80px;
 }
+
+.logo {
+    width: 200px;
+    max-width: 100%;
+}
+.fade-section {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.fade-section.visible {
+    opacity: 1;
+}

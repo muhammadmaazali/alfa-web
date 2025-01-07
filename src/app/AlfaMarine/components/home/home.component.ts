@@ -8,6 +8,7 @@ import { BusinessSectionComponent } from './business-section/business-section.co
 import { CareersSectionComponent } from './careers-section/careers-section.component';
 import { QhseWorldSectionComponent } from './qhse-world-section/qhse-world-section.component';
 import { NewsLatestSectionComponent } from './news-latest-section/news-latest-section.component';
+import { trigger, transition, style, animate } from '@angular/animations';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -15,7 +16,15 @@ import { NewsLatestSectionComponent } from './news-latest-section/news-latest-se
     CareersSectionComponent, QhseWorldSectionComponent, NewsLatestSectionComponent,
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('1s', style({ opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class HomeComponent {
 
