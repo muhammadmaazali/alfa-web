@@ -85,18 +85,21 @@
 }
 .projectimg-list {
     li {
-        flex: 1;
+        > div {
+            height: 107px;
+            img {
+                width: 100%;
+                border-radius: 1rem;
+                height: 107px;
+                border-radius: 0.5rem;
+                -webkit-border-radius: 0.5rem;
+                -moz-border-radius: 0.5rem;
+                -ms-border-radius: 0.5rem;
+                -o-border-radius: 0.5rem;
+            }
+        }
     }
-    img {
-        width: 153px;
-        height: 107px;
-        max-width: 100%;
-        border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
-    }
+
     p {
         font-size: 13px;
         line-height: 1.25em;

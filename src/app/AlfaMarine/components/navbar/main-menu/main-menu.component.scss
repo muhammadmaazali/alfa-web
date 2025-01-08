@@ -14,5 +14,14 @@
             font-size: 15px;
             font-weight: 600;
         }
+        .p-menubar-mobile .p-menubar-button {
+            position: absolute;
+            right: 0;
+            color: #fff;
+            .p-icon {
+                width: 1.75rem;
+                height: 1.75rem;
+            }
+        }
     }
 }

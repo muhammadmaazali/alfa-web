@@ -1249,9 +1249,7 @@ strong {
 }
 
 .site-footer-bottom {
-  border-top: 1px solid #7fbcf0;
-  position: relative;
-  z-index: 2;
+  border-top: 1px solid #386388;
   margin-top: 50px;
   padding-top: 25px;
   padding-bottom: 25px;
