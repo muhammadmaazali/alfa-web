@@ -68,7 +68,7 @@
     span {
     }
     span + span {
-        color: #25e5ff;
+        color: var(--primaryclr);
     }
 }
 .hero-section {
