@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { MainMenuComponent } from '../navbar/main-menu/main-menu.component';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [MainMenuComponent],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

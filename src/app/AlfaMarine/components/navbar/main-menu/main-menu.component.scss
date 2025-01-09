@@ -1,8 +1,11 @@
 ::ng-deep {
     .header-menubar {
-        .p-menubar-item-content {
-            // color: #fff;
+        p-menubarsub {
+            width: 100%;
+            justify-content: flex-end;
+            display: flex;
         }
+
         .p-menubar-root-list {
             gap: 0.5rem;
         }
@@ -10,6 +13,7 @@
             width: 200px;
             max-width: 100%;
         }
+
         .p-menubar-root-list > .p-menubar-item > .p-menubar-item-content > .p-menubar-item-link {
             font-size: 15px;
             font-weight: 600;

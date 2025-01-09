@@ -22,12 +22,12 @@ ul.clean {
         color: #009de0;
     }
 }
-
-footer.site-footer .units {
-    display: grid;
-    gap: 1rem;
-    font-weight: 400;
-}
+//
+// footer.site-footer .units {
+//     display: grid;
+//     gap: 1rem;
+//     font-weight: 400;
+// }
 
 footer.site-footer .sitemap a {
     display: inline-flex;
@@ -48,21 +48,21 @@ footer.site-footer .sitemap a:hover {
     color: #009de0;
     border-color: #009de0;
 }
-footer.site-footer .contact-emails {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-}
-footer.site-footer .contact-emails li {
-    -webkit-padding-start: 1rem;
-    padding-inline-start: 1rem;
-    -webkit-border-start: 2px solid var(--clr-blue);
-    border-inline-start: 2px solid var(--clr-blue);
-    width: 100%;
-    color: #f2f2f2;
-    font-size: 0.9rem;
-}
+// footer.site-footer .contact-emails {
+//     width: 100%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 1.25rem;
+// }
+// footer.site-footer .contact-emails li {
+//     -webkit-padding-start: 1rem;
+//     padding-inline-start: 1rem;
+//     -webkit-border-start: 2px solid var(--clr-blue);
+//     border-inline-start: 2px solid var(--clr-blue);
+//     width: 100%;
+//     color: #f2f2f2;
+//     font-size: 0.9rem;
+// }
 address p,
 .social-media a {
     color: #fff;
@@ -85,4 +85,57 @@ address p,
 
 .scroll-to-top:hover {
     background-color: #0056b3;
+}
+
+::ng-deep {
+    .site-footer {
+        app-main-menu .container {
+            padding: 0;
+        }
+        .p-menubar-start {
+            display: none;
+        }
+        // .p-menubar-item-content {
+        //     color: #fff;
+        // }
+        .header-menubar p-menubarsub {
+            justify-content: flex-start;
+        }
+        .header-menubar .p-menubar-root-list {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .header-menubar {
+            .p-menubar {
+                padding: 0;
+                > p-menubarsub
+                    > ul.p-menubar-root-list
+                    > li.p-menubar-item[aria-level="1"]
+                    > .p-menubar-item-content
+                    > a {
+                    color: #fff;
+                }
+            }
+            .p-menubar {
+                padding-top: 0;
+                > p-menubarsub
+                    > ul.p-menubar-root-list
+                    > li.p-menubar-item[aria-level="1"]
+                    > .p-menubar-item-content:hover
+                    > a {
+                    color: #21386d;
+                }
+                > p-menubarsub
+                    > ul.p-menubar-root-list
+                    > li.p-menubar-item[aria-level="1"]
+                    > .p-menubar-item-content:active
+                    > a {
+                    color: #21386d;
+                }
+            }
+            // .p-menubar-item[aria-level="1"] > .p-menubar-item-content:hover a {
+            //     color: #21386d;
+            // }
+        }
+    }
 }
