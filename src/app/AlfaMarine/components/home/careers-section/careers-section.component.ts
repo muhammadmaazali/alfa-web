@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-careers-section',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './careers-section.component.html',
   styleUrl: './careers-section.component.scss'
 })

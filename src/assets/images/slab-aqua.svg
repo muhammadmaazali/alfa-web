@@ -1,15 +1,1 @@
-<svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1469_1194)">
-<mask id="mask0_1469_1194" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="16">
-<path d="M14 0H0V16H14V0Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_1469_1194)">
-<path d="M0 10.2816L14 0V5.88718L0 16V10.2816Z" fill="#30A9E1"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_1469_1194">
-<rect width="14" height="16" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 596.28 341.29"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#3095d2;}</style><clipPath id="clip-path"><rect id="SVGID" class="cls-1" y="-24.86" width="596.28" height="369.54"/></clipPath></defs><g class="cls-2"><path class="cls-3" d="M-230.65,335.68Q-34,213.93,161.56,90.24c13.93-8.81,23.28-6.76,35.78,1Q395.09,214,593.5,335.69c10.27,6.28,15.81,13,18.08,22.56V143.17c-68-22.42-134.14-44.17-200.27-66.09C340,53.45,268.65,30,197.57,5.67c-13.43-4.59-25.2-4.32-38.56.06Q-32.16,68.36-223.65,130c-7.91,2.56-15.91,4.82-25.06,7.56V359.88C-246.76,349.59-241.44,342.36-230.65,335.68Z"/></g></svg>

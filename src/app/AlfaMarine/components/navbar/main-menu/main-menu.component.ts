@@ -78,7 +78,7 @@ export class MainMenuComponent implements OnInit {
           [
             { label: 'News' },
             { label: 'Gallery ' },
-            { label: 'Download' },
+            { label: 'Downloads', route:'/downloads' },
           ]
       },
       {

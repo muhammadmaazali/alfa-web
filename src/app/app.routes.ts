@@ -26,6 +26,7 @@ import { HealthSafetyAndEnvironmentalPolicyComponent } from './AlfaMarine/compon
 import { QualityAssurancePolicyComponent } from './AlfaMarine/components/quality-assurance-policy/quality-assurance-policy.component';
 import { CareersComponent } from './AlfaMarine/components/careers/careers.component';
 import { SPEAKUPComponent } from './AlfaMarine/components/speakup/speakup.component';
+import { DownloadComponent } from './AlfaMarine/components/download/download.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -45,6 +46,7 @@ export const routes: Routes = [
     { path: 'quality-assurance-policy', component: QualityAssurancePolicyComponent },
     { path: 'careers', component: CareersComponent },
     { path: 'speak-up', component: SPEAKUPComponent },
+    { path: 'downloads', component: DownloadComponent },
     { path: 'accreditations', component: AccreditationsComponent },
     { path: 'accreditations', component: AccreditationsComponent },
     { path: 'accreditations', component: AccreditationsComponent },
