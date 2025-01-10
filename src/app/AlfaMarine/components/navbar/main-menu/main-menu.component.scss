@@ -29,3 +29,29 @@
         }
     }
 }
+
+::ng-deep .header-menubar {
+    .p-menubar
+        > p-menubarsub
+        > ul.p-menubar-root-list
+        > li.p-menubar-item[aria-level="1"]:hover
+        p-menubarsub[ng-reflect-level="1"]
+        > .p-menubar-submenu {
+        display: block !important;
+    }
+}
+::ng-deep .header-menubar {
+    .p-menubar
+        > p-menubarsub
+        > ul.p-menubar-root-list
+        > li.p-menubar-item[aria-level="1"]
+        p-menubarsub[ng-reflect-level="1"]
+        > .p-menubar-submenu
+        > li.p-menubar-item[aria-level="2"]:hover
+        p-menubarsub[ng-reflect-level="2"]
+        > .p-menubar-submenu {
+        display: block !important;
+        left: 100%;
+        top: 0;
+    }
+}
