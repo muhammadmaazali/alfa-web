@@ -88,6 +88,9 @@ body {
     --primaryclr: #21386d;
     --secondaryclr: #2c95d2;
 
+    --bg-primaryclr: #21386d;
+    --bg-secondaryclr: #2c95d2;
+
     --hoverclr: #02abbe;
     --activeclr: #4bc8d6;
 
@@ -105,12 +108,21 @@ body {
     scrollbar-color: #dfeaef #f2fafe;
 }
 
+.bg-primaryclr {
+    background-color: #21386d;
+}
+.bg-secondaryclr {
+    background-color: #2c95d2;
+}
 .primary-clr-text {
     color: var(--primary-clr-text);
 }
 
 .primary-clr-dark-text {
     color: var(--primary-clr-dark-text);
+}
+.primary-clr-text {
+    color: var(--primary-clr-text);
 }
 
 // html {

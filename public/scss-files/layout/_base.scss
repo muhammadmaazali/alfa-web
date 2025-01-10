@@ -55,17 +55,17 @@
     background-size: cover;
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-42%, -50%);
     -webkit-margin-start: 16px;
     margin-inline-start: 16px;
     z-index: -1;
     height: 140px;
     display: block;
     aspect-ratio: 140 / 160;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-42%, -50%);
+    -moz-transform: translate(-42%, -50%);
+    -ms-transform: translate(-42%, -50%);
+    -o-transform: translate(-42%, -50%);
 }
 .txt-description {
     color: #002438;

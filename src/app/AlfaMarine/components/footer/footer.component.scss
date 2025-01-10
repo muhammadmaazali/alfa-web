@@ -1,6 +1,5 @@
 .site-footer {
     background-color: #21386d;
-    padding-top: 50px;
 }
 
 ul.clean {
@@ -22,13 +21,6 @@ ul.clean {
         color: #009de0;
     }
 }
-//
-// footer.site-footer .units {
-//     display: grid;
-//     gap: 1rem;
-//     font-weight: 400;
-// }
-
 footer.site-footer .sitemap a {
     display: inline-flex;
     color: #f2f2f2;
@@ -48,21 +40,6 @@ footer.site-footer .sitemap a:hover {
     color: #009de0;
     border-color: #009de0;
 }
-// footer.site-footer .contact-emails {
-//     width: 100%;
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: 1.25rem;
-// }
-// footer.site-footer .contact-emails li {
-//     -webkit-padding-start: 1rem;
-//     padding-inline-start: 1rem;
-//     -webkit-border-start: 2px solid var(--clr-blue);
-//     border-inline-start: 2px solid var(--clr-blue);
-//     width: 100%;
-//     color: #f2f2f2;
-//     font-size: 0.9rem;
-// }
 address p,
 .social-media a {
     color: #fff;
@@ -95,9 +72,6 @@ address p,
         .p-menubar-start {
             display: none;
         }
-        // .p-menubar-item-content {
-        //     color: #fff;
-        // }
         .header-menubar p-menubarsub {
             width: unset;
             justify-content: flex-start;
@@ -134,9 +108,6 @@ address p,
                     color: #21386d;
                 }
             }
-            // .p-menubar-item[aria-level="1"] > .p-menubar-item-content:hover a {
-            //     color: #21386d;
-            // }
         }
     }
 }
