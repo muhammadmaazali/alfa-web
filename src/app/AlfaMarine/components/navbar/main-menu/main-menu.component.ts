@@ -83,6 +83,7 @@ export class MainMenuComponent implements OnInit {
       },
       {
         label: 'Contact us ',
+        route:'/contact-us',
         items:
           [
             { label: 'Commercial Inquiries',route:'/commercial-inquiries' },
