@@ -46,6 +46,7 @@
     mix-blend-mode: multiply;
     pointer-events: none;
 }
+
 /* Make the menu absolute */
 .header-menubar {
     top: 20px;
@@ -65,12 +66,18 @@
     text-transform: uppercase;
     line-height: 1em;
     font-family: "Montserrat-Arabic", sans-serif;
-    span {
-    }
-    span + span {
+
+    span {}
+
+    span+span {
         color: var(--primaryclr);
     }
 }
+
+.text-secondaryclr {
+    color: var(--bg-secondaryclr)
+}
+
 .hero-section {
     p {
         font-weight: 500;
@@ -78,10 +85,12 @@
         letter-spacing: 1.5px;
     }
 }
+
 .cta:not(button):not(.button):hover,
 a.cta:not(.button):hover {
     color: #7ad7ff;
 }
+
 .cta:not(button):not(.button):hover svg,
 a.cta:not(.button):hover svg {
     color: #002438;

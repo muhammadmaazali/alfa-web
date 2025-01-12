@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Menubar } from 'primeng/menubar';
 import { MenuItemContent } from 'primeng/menu';
@@ -11,27 +11,28 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-main-menu',
   standalone: true,
-  imports: [MenuItemContent, Menubar, MainMenuComponent,
-    Menubar, Ripple, CommonModule, RouterModule],
+  imports: [MenuItemContent, Menubar, MainMenuComponent, Ripple, CommonModule, RouterModule],
   templateUrl: './main-menu.component.html',
   styleUrl: './main-menu.component.scss'
 })
 export class MainMenuComponent implements OnInit {
   items: MenuItem[] | undefined;
-
+  isFixed: boolean = false;
+  isScrolled: boolean = false;
   ngOnInit() {
     this.items = [
-      { label: 'Home' ,route:'/home'},
+      // { label: 'Home' ,route:'/home'},
       {
         label: 'Who We Are ',
         items:
           [
-            { label: 'About ALFA	', route: '/about-alfa' },
+            { label: 'About Us	', route: '/about-alfa' },
             { label: 'Mission and Vision', route: '/mission-and-vision' },
             { label: 'Core Values', route: '/core-values' },
             { label: 'Leadership', route: '/leadership' },
             { label: 'Our Culture', route: '/our-culture' },
             { label: 'Our Strategy ', route: '/our-strategy' },
+            { label: 'Our clients ', route: '/our-clients' },
             { label: 'Ethics and Compliance ', route: '/ethics-and-compliance' },
             { label: 'Accreditations  ', route: '/accreditations' },
           ]
@@ -63,6 +64,7 @@ export class MainMenuComponent implements OnInit {
             { label: 'Our Product / Supplies' ,route:'/our-product-or-supplies' },
           ],
       },
+      { label: 'Projects'},
       {
         label: 'Sustainability ',
         items:
@@ -93,5 +95,16 @@ export class MainMenuComponent implements OnInit {
           ]
       },
     ];
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const offset = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Toggle the fixed class
+    this.isFixed = offset > 0;
+
+    // Add a scrolled class if offset exceeds a certain value
+    this.isScrolled = offset > 100; // Adjust the value based on your preference
   }
 }

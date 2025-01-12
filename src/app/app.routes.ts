@@ -3,7 +3,6 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HomeComponent } from './AlfaMarine/components/home/home.component';
 import { CommercialInquiriesComponent } from './AlfaMarine/components/commercial-inquiries/commercial-inquiries.component';
 import { BecomeASupplierComponent } from './AlfaMarine/components/become-a-supplier/become-a-supplier.component';
-import { SpeakUpComponent } from './AlfaMarine/components/speak-up/speak-up.component';
 import { AboutAlfaComponent } from './AlfaMarine/components/about-alfa/about-alfa.component';
 import { MissionAndVisionComponent } from './AlfaMarine/components/mission-and-vision/mission-and-vision.component';
 import { LeadershipComponent } from './AlfaMarine/components/leadership/leadership.component';

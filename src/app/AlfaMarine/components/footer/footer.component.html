@@ -124,20 +124,69 @@
     </div> -->
 
     <div class="container">
-        <div class="grid">
+        <!-- <div class="grid">
             <div class="col-12 mb-6">
                 <header>
                     <a href="#"><img src="assets/images/logos/logo-white.png" class="logo img-fluid"
                             alt="ALFA Group"></a>
                 </header>
             </div>
-        </div>
+        </div> -->
         <div class="grid">
+            <div class="col-12 lg:col-4 xl:col-4">
+                <div class="footer-title">
+                    <h3><a href="#"><img src="assets/images/logos/logo-white.png" class="logo img-fluid"
+                        alt="ALFA Group"></a></h3>
+                </div>
+                <address>
+                    <div class="flex flex-column flex flex-column gap-3 text-sm">
+                        <p class="m-0 flex gap-3"> <i class="pi pi-map-marker text-sm pt-2"></i>
+                            Office No. 19, 3rd Floor, 4855 Building, <br>
+                            Prince Mansour streent, <br>
+                            Prince Muhammad IBN Saud Dist, Dammam 32241, EP, K.S.A
+                        </p>
+                        <p class="m-0 flex align-items-center gap-3"> <i class="pi pi-phone text-sm"></i> +966
+                            13 805
+                            2528 </p>
+                        <p class="m-0 flex align-items-center gap-3"> <i class="pi pi-envelope text-sm"></i>
+                            info&#64;alfamarinesa.com </p>
+                        <p class="m-0 flex align-items-center gap-3"> <i class="pi pi-globe text-sm"></i>
+                            www.alfamarinesa.com
+                        </p>
+                        <ul
+                            class="social-media clean flex gap-3 justify-content-center lg:justify-content-start pl-0 lg:pl-5 ">
+                            <li> <a href="https://www.linkedin.com/company/afla-marine" target="_blank"><i
+                                        class="pi pi-linkedin"></i> </a> </li>
+                            <li> <a href="https://instgram.com/alfa_marine_sa" target="_blank"><i
+                                        class="pi pi-instagram"></i> </a> </li>
+                            <!-- <li> <a href="#" target="_blank"><i class="pi pi-youtube"></i> </a> </li>
+                            <li> <a href="#" target="_blank"><i class="pi pi-facebook"></i> </a> </li> -->
+                            <li> <a href="https://x.com/alfamarinesa" target="_blank"><i class="pi pi-twitter"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </address>
+            </div>
             <div class="col-12 lg:col-6">
                 <div class="footer-title">
                     <h3>Quick Links</h3>
                 </div>
-                <app-main-menu></app-main-menu>
+                <p-menubar class="header-menubar" [model]="items">
+                    <ng-template #start>
+                        <!-- <img routerLink="/about-alfa" src="assets/images/logos/logo-white.png" class="header-logo img-fluid" alt="Logo"> -->
+                    </ng-template>
+                    <ng-template #item let-item let-root="root">
+                        <a pRipple class="flex items-center p-menubar-item-link" [routerLink]="item?.route">
+                            <span>{{ item.label }}</span>
+                            <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }" [value]="item.badge" />
+                            <span *ngIf="item.shortcut"
+                                class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">{{
+                                item.shortcut }}</span>
+                            <i *ngIf="item.items" [ngClass]="['ml-auto pi', root ? 'pi-angle-down' : 'pi-angle-right']"></i>
+                        </a>
+                    </ng-template>
+                </p-menubar>
+                <!-- <app-main-menu></app-main-menu> -->
                 <!-- <ul class="clean units">
                     <li data-brand="dredging-and-marine">
                         <a class="cta blue" href="https://nmdc-dredgingmarine.com/" target="_blank">
@@ -214,39 +263,6 @@
                             </li>
                         </ul>
                     </div> -->
-            <div class="col-12 lg:col-6 xl:col-6">
-                <div class="footer-title">
-                    <h3>Address</h3>
-                </div>
-                <address>
-                    <div class="flex flex-column flex flex-column gap-3 text-sm">
-                        <p class="m-0 flex align-items-center gap-3"> <i class="pi pi-phone text-sm"></i> +966
-                            13 805
-                            2528 </p>
-                        <p class="m-0 flex align-items-center gap-3"> <i class="pi pi-envelope text-sm"></i>
-                            info&#64;alfamarinesa.com </p>
-                        <p class="m-0 flex align-items-center gap-3"> <i class="pi pi-globe text-sm"></i>
-                            www.alfamarinesa.com
-                        </p>
-                        <p class="m-0 flex gap-3"> <i class="pi pi-map-marker text-sm pt-2"></i>
-                            Office No. 19, 3rd Floor, 4855 Building, <br>
-                            Prince Mansour streent, <br>
-                            Prince Muhammad IBN Saud Dist, Dammam 32241, EP, K.S.A
-                        </p>
-                        <ul
-                            class="social-media clean flex gap-3 justify-content-center lg:justify-content-start pl-0 lg:pl-5 ">
-                            <li> <a href="https://www.linkedin.com/company/afla-marine" target="_blank"><i
-                                        class="pi pi-linkedin"></i> </a> </li>
-                            <li> <a href="https://instgram.com/alfa_marine_sa" target="_blank"><i
-                                        class="pi pi-instagram"></i> </a> </li>
-                            <!-- <li> <a href="#" target="_blank"><i class="pi pi-youtube"></i> </a> </li>
-                            <li> <a href="#" target="_blank"><i class="pi pi-facebook"></i> </a> </li> -->
-                            <li> <a href="https://x.com/alfamarinesa" target="_blank"><i class="pi pi-twitter"></i> </a>
-                            </li>
-                        </ul>
-                    </div>
-                </address>
-            </div>
             <!-- 
                 </div>
             </div> -->

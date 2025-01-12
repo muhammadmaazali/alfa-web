@@ -10,11 +10,12 @@ import { QhseWorldSectionComponent } from './qhse-world-section/qhse-world-secti
 import { NewsLatestSectionComponent } from './news-latest-section/news-latest-section.component';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { RouterModule } from '@angular/router';
+import { OurClientsComponent } from '../our-clients/our-clients.component';
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [NavbarComponent, FooterComponent, CommonModule, TabsModule, BusinessSectionComponent, LatestProjectsComponent,
-    CareersSectionComponent, QhseWorldSectionComponent, NewsLatestSectionComponent,RouterModule
+    CareersSectionComponent, QhseWorldSectionComponent, NewsLatestSectionComponent,OurClientsComponent,RouterModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

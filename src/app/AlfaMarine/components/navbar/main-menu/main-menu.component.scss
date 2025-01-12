@@ -9,19 +9,22 @@
         .p-menubar-root-list {
             gap: 0.5rem;
         }
+
         .header-logo {
             width: 200px;
             max-width: 100%;
         }
 
-        .p-menubar-root-list > .p-menubar-item > .p-menubar-item-content > .p-menubar-item-link {
+        .p-menubar-root-list>.p-menubar-item>.p-menubar-item-content>.p-menubar-item-link {
             font-size: 15px;
             font-weight: 600;
         }
+
         .p-menubar-mobile .p-menubar-button {
             position: absolute;
             right: 0;
             color: #fff;
+
             .p-icon {
                 width: 1.75rem;
                 height: 1.75rem;
@@ -31,27 +34,29 @@
 }
 
 ::ng-deep .header-menubar {
-    .p-menubar
-        > p-menubarsub
-        > ul.p-menubar-root-list
-        > li.p-menubar-item[aria-level="1"]:hover
-        p-menubarsub[ng-reflect-level="1"]
-        > .p-menubar-submenu {
+    .p-menubar>p-menubarsub>ul.p-menubar-root-list>li.p-menubar-item[aria-level="1"]:hover p-menubarsub[ng-reflect-level="1"]>.p-menubar-submenu {
         display: block !important;
     }
 }
+
 ::ng-deep .header-menubar {
-    .p-menubar
-        > p-menubarsub
-        > ul.p-menubar-root-list
-        > li.p-menubar-item[aria-level="1"]
-        p-menubarsub[ng-reflect-level="1"]
-        > .p-menubar-submenu
-        > li.p-menubar-item[aria-level="2"]:hover
-        p-menubarsub[ng-reflect-level="2"]
-        > .p-menubar-submenu {
+    .p-menubar>p-menubarsub>ul.p-menubar-root-list>li.p-menubar-item[aria-level="1"] p-menubarsub[ng-reflect-level="1"]>.p-menubar-submenu>li.p-menubar-item[aria-level="2"]:hover p-menubarsub[ng-reflect-level="2"]>.p-menubar-submenu {
         display: block !important;
         left: 100%;
         top: 0;
     }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.scrolled {
+    background-color: #ffffff;
+    /* Change to your desired background color */
+    // color: white;
+    /* Optional: Change text color */
 }
