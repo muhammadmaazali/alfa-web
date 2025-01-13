@@ -66,6 +66,9 @@ address p,
 
 ::ng-deep {
     .site-footer {
+        .p-menubar-button {
+            display: none !important;
+        }
         app-main-menu .container {
             padding: 0;
         }
@@ -76,10 +79,16 @@ address p,
             width: unset;
             justify-content: flex-start;
         }
+
         .header-menubar .p-menubar-root-list {
             flex-direction: column;
             align-items: flex-start;
+
+            // add for open menu in footer just
+            display: block;
+            position: relative;
         }
+
         .header-menubar {
             // .p-menubar {
             //     padding: 0;

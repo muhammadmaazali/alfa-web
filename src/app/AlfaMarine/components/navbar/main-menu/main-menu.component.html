@@ -1,7 +1,10 @@
 <div class="container">
-    <p-menubar class="header-menubar" [model]="items" [class.fixed]="isFixed" [class.scrolled]="isScrolled">
+    <p-menubar class="header-menubar" styleClass="container" [model]="items" [class.fixed]="isFixed"
+        [class.scrolled]="isScrolled">
         <ng-template #start>
-            <img routerLink="/about-alfa" [src]="isFixed?'assets/images/logos/logo-color.png':'assets/images/logos/logo-white.png'" class="header-logo img-fluid" alt="Logo">
+            <img routerLink="/about-alfa"
+                [src]="isFixed?'assets/images/logos/logo-color.png':'assets/images/logos/logo-white.png'"
+                class="header-logo img-fluid" alt="Logo">
         </ng-template>
         <!-- E:\alpha-website v-1\src\assets\ALFA LOGO\ALFA LOGO\Variation Size\1x\ALFAALFA LOGO V2.1 COLOR1x.png -->
         <ng-template #item let-item let-root="root">

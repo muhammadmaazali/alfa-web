@@ -15,10 +15,9 @@
     .header-menubar {
         .p-menubar {
             width: 100%;
-            gap: 2rem;
             background: transparent;
             border: 0;
-            padding-top: 2rem;
+            padding: 1.5rem 0;
         }
     }
 }
@@ -67,15 +66,16 @@
     line-height: 1em;
     font-family: "Montserrat-Arabic", sans-serif;
 
-    span {}
+    span {
+    }
 
-    span+span {
+    span + span {
         color: var(--primaryclr);
     }
 }
 
 .text-secondaryclr {
-    color: var(--bg-secondaryclr)
+    color: var(--bg-secondaryclr);
 }
 
 .hero-section {
