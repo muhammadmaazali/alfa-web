@@ -63,99 +63,34 @@ address p,
 .scroll-to-top:hover {
     background-color: #0056b3;
 }
-
-::ng-deep {
-    .site-footer {
-        .p-menubar-button {
-            display: none !important;
-        }
-        app-main-menu .container {
-            padding: 0;
-        }
-        .p-menubar-start {
-            display: none;
-        }
-        .header-menubar p-menubarsub {
-            width: unset;
-            justify-content: flex-start;
-        }
-
-        .header-menubar .p-menubar-root-list {
-            flex-direction: column;
-            align-items: flex-start;
-
-            // add for open menu in footer just
-            display: block;
-            position: relative;
-        }
-
-        .header-menubar {
-            // .p-menubar {
-            //     padding: 0;
-            //     > p-menubarsub
-            //         > ul.p-menubar-root-list
-            //         > li.p-menubar-item[aria-level="1"]
-            //         > .p-menubar-item-content
-            //         > a {
-            //         color: #fff;
-            //     }
-            // }
-            .p-menubar {
-                padding-top: 0;
-                > p-menubarsub
-                    > ul.p-menubar-root-list
-                    > li.p-menubar-item[aria-level="1"]
-                    > .p-menubar-item-content:hover
-                    > a {
-                    color: #21386d;
-                }
-                > p-menubarsub
-                    > ul.p-menubar-root-list
-                    > li.p-menubar-item[aria-level="1"]
-                    > .p-menubar-item-content:active
-                    > a {
-                    color: #21386d;
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: 961px) {
-    ::ng-deep {
-        .site-footer {
-            .header-menubar
-                .p-menubar
-                > p-menubarsub
-                > ul.p-menubar-root-list
-                > li.p-menubar-item[aria-level="1"]
-                p-menubarsub[ng-reflect-level="1"]
-                > .p-menubar-submenu
-                > li.p-menubar-item[aria-level="2"]:hover
-                p-menubarsub[ng-reflect-level="2"]
-                > .p-menubar-submenu {
-                display: block !important;
-                left: 100%;
-                top: unset !important;
-                bottom: 0 !important;
-            }
-            .p-menubar {
-                padding: 0;
-                > p-menubarsub
-                    > ul.p-menubar-root-list
-                    > li.p-menubar-item[aria-level="1"]
-                    > .p-menubar-item-content
-                    > a {
-                    color: #fff;
-                }
-            }
-        }
-    }
-}
 .footer-title {
     h3 {
         color: #fff;
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 1.75rem;
+    }
+}
+
+::ng-deep {
+    .footer-menubar {
+        .p-menubar {
+            background: transparent;
+            border: 0;
+            padding: 0;
+            .p-menubar-item-link {
+                color: #fff;
+            }
+        }
+        .p-menubar-root-list {
+            gap: 0;
+        }
+        .p-menubar-mobile .p-menubar-root-list {
+            display: block;
+            position: relative;
+        }
+        .p-menubar-mobile .p-menubar-button {
+            display: none;
+        }
     }
 }
