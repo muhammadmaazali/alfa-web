@@ -1,0 +1,88 @@
+.management-team-wrapper {
+    position: relative;
+    background-color: #8b8b8b;
+    overflow: hidden;
+    transition: all 0.3s ease-out 0s !important;
+}
+.management-team-wrapper:after {
+    background: rgb(0, 29, 26);
+    background: linear-gradient(180deg, rgba(0, 29, 26, 0) 55%, rgb(0, 29, 26) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001d1a",endColorstr="#001d1a",GradientType=1);
+    position: absolute;
+    content: "";
+    height: 100%;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+}
+a {
+    color: #f6630c;
+    text-decoration: none;
+    /* font-weight: normal; */
+    transition: all 0.3s ease-out 0s !important;
+}
+i,
+span,
+a {
+    display: inline-block;
+}
+.management-team-wrapper:hover {
+    background-color: #003c34;
+}
+.management-team-wrapper:hover .border-process {
+    opacity: 1 !important;
+}
+.management-team-wrapper .border-process {
+    position: absolute;
+    border: 1px solid #f8f8f8;
+    padding: 30px;
+    width: 90%;
+    height: 92%;
+    left: 5%;
+    top: 4%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease-out 0s !important;
+}
+.management-team-wrapper:hover img {
+    transform: scale(1.05);
+    transform-origin: 50% 50%;
+}
+.management-team-wrapper img {
+    width: 100%;
+    transition: transform 0.4s;
+}
+
+.management-team-wrapper .management-team-title {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+    padding-top: 17px;
+}
+.management-team-wrapper:hover .management-team-title {
+    background: none;
+    bottom: 30px;
+    left: 40px;
+}
+.management-team-wrapper:hover .management-team-title h4 {
+    color: #e5a93f;
+}
+.management-team-wrapper .management-team-title h4 {
+    color: #003c34;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.management-team-wrapper .management-team-title span {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4d4d4d;
+    padding-right: 80px;
+    min-height: 3em;
+}
+.management-team-wrapper:hover .management-team-title span {
+    color: #fff;
+}
