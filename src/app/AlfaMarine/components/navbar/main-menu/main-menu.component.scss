@@ -150,7 +150,8 @@
                 color: var(--secondaryclr);
             }
         }
-        .p-menubar
+        .header-menubar
+            .p-menubar
             > p-menubarsub
             > ul.p-menubar-root-list
             > li.p-menubar-item[aria-level="1"]

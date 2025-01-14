@@ -106,6 +106,9 @@ address p,
         .p-menubar-mobile .p-menubar-root-list {
             display: block;
             position: relative;
+            background: transparent;
+            border: 0;
+            box-shadow: none;
         }
         .p-menubar-mobile .p-menubar-button {
             display: none;
