@@ -4,13 +4,13 @@
         <ng-template #start>
             <img routerLink="/about-alfa"
                 [src]="isFixed?'assets/images/logos/logo-color.png':'assets/images/logos/logo-white.png'"
-                class="header-logo img-fluid" alt="Logo">
+                class="header-logo img-fluid cursor-pointer" alt="Logo">
         </ng-template>
         <!-- E:\alpha-website v-1\src\assets\ALFA LOGO\ALFA LOGO\Variation Size\1x\ALFAALFA LOGO V2.1 COLOR1x.png -->
         <ng-template #item let-item let-root="root">
             <a pRipple class="flex items-center p-menubar-item-link" [routerLink]="item?.route">
                 <span>{{ item.label }}</span>
-                <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }" [value]="item.badge" />
+                <!-- <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }" [value]="item.badge" /> -->
                 <span *ngIf="item.shortcut"
                     class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">{{
                     item.shortcut }}</span>

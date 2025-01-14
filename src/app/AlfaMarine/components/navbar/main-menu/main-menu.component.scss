@@ -1,27 +1,14 @@
 ::ng-deep {
     .header-menubar {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        z-index: 1000;
         .p-menubar {
             width: 100%;
             background: transparent;
             border: 0;
             padding: 0;
-        }
-    }
-}
-
-.header-menubar {
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-::ng-deep {
-    .header-menubar {
-        p-menubarsub {
-            width: 100%;
-            justify-content: flex-end;
-            display: flex;
         }
 
         .p-menubar-root-list {
@@ -36,17 +23,6 @@
         .p-menubar-root-list > .p-menubar-item > .p-menubar-item-content > .p-menubar-item-link {
             font-size: 15px;
             font-weight: 600;
-        }
-
-        .p-menubar-mobile .p-menubar-button {
-            position: absolute;
-            right: 0;
-            color: #fff;
-
-            .p-icon {
-                width: 1.75rem;
-                height: 1.75rem;
-            }
         }
     }
 }
@@ -70,45 +46,14 @@
 }
 
 ::ng-deep .header-menubar {
-    .p-menubar-item:not(.p-disabled) > .p-menubar-item-content:hover {
+    .p-menubar-root-list > .p-menubar-item > .p-menubar-item-content {
         background-color: transparent;
     }
-    .p-menubar
-        > p-menubarsub
-        > ul.p-menubar-root-list
-        > li.p-menubar-item[aria-level="1"]
-        .p-menubar-item-content
-        .p-menubar-item-link {
-        padding-top: 2rem;
-        padding-bottom: 1.75rem;
-        // margin-bottom: 0.5rem;
+    .p-menubar-item:not(.p-disabled) > .p-menubar-item-content:hover {
+        background-color: transparent;
+        outline: none;
     }
-    .p-menubar
-        > p-menubarsub
-        > ul.p-menubar-root-list
-        > li.p-menubar-item[aria-level="1"]:hover
-        p-menubarsub[ng-reflect-level="1"]
-        > .p-menubar-submenu {
-        width: 260px;
-        display: block !important;
-        left: 0;
-        // background-color: transparent;
-        // border: 0;
-        // box-shadow: none;
-        // padding-top: 0.5rem;
-        // border-radius: 0;
-        border-bottom: 3px solid var(--primaryclr);
-        // padding-left: 0;
-        // padding-right: 0;
-        // padding-bottom: 0;
-        // box-shadow:
-        //     2px 2px 5px 1px rgba(0, 0, 0, 0.05),
-        //     -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
-        background: transparent;
-        border: 0;
-        padding: 0;
-        padding-top: 0.75rem;
-    }
+
     .p-menubar > p-menubarsub > ul.p-menubar-root-list > li.p-menubar-item[aria-level="1"] {
         position: relative;
     }
@@ -126,7 +71,7 @@
         width: 20%;
         height: 3px;
         opacity: 0;
-        background-color: var(--primaryclr);
+        background-color: var(--secondaryclr);
         transition: all 300ms ease;
     }
     .p-menubar
@@ -147,38 +92,14 @@
         > li.p-menubar-item[aria-level="1"]
         p-menubarsub[ng-reflect-level="1"]
         > .p-menubar-submenu
-        > li.p-menubar-item[aria-level="2"]
-        p-menubarsub[ng-reflect-level="2"]
-        > .p-menubar-submenu {
-        width: 260px;
-    }
-    .p-menubar
-        > p-menubarsub
-        > ul.p-menubar-root-list
-        > li.p-menubar-item[aria-level="1"]
-        p-menubarsub[ng-reflect-level="1"]
-        > .p-menubar-submenu
-        > li.p-menubar-item[aria-level="2"]:hover
-        p-menubarsub[ng-reflect-level="2"]
-        > .p-menubar-submenu {
-        display: block !important;
-        left: 100%;
-        top: 0;
-    }
-    .p-menubar
-        > p-menubarsub
-        > ul.p-menubar-root-list
-        > li.p-menubar-item[aria-level="1"]
-        p-menubarsub[ng-reflect-level="1"]
-        > .p-menubar-submenu
         > li.p-menubar-item[aria-level="2"] {
         background: #fff;
         .p-menubar-item-content {
             .p-menubar-item-link {
-                // margin: 0 0.5rem;
                 border-bottom: 1px solid #f2f2f2;
                 padding-top: 0.75rem;
                 padding-bottom: 0.75rem;
+                font-size: 0.875rem;
             }
         }
     }
@@ -192,9 +113,121 @@
         background: #fff;
         .p-menubar-item-content {
             .p-menubar-item-link {
-                // margin: 0 0.5rem;
                 border-bottom: 1px solid var(--primaryclr);
+                font-size: 0.875rem;
             }
         }
     }
 }
+
+/*=============================================
+=            NEW CSS ADDED FOR HEADER MENU            =
+=============================================*/
+@media (min-width: 961px) {
+    ::ng-deep {
+        .header-menubar
+            .p-menubar
+            > p-menubarsub
+            > ul.p-menubar-root-list
+            > li.p-menubar-item[aria-level="1"]
+            > .p-menubar-item-content
+            > .p-menubar-item-link {
+            color: #fff;
+
+            &:hover {
+                color: var(--secondaryclr);
+            }
+        }
+        .header-menubar.fixed.scrolled
+            .p-menubar
+            > p-menubarsub
+            > ul.p-menubar-root-list
+            > li.p-menubar-item[aria-level="1"]
+            > .p-menubar-item-content
+            > .p-menubar-item-link {
+            color: var(--primaryclr);
+            &:hover {
+                color: var(--secondaryclr);
+            }
+        }
+        .p-menubar
+            > p-menubarsub
+            > ul.p-menubar-root-list
+            > li.p-menubar-item[aria-level="1"]
+            .p-menubar-item-content
+            .p-menubar-item-link {
+            padding-top: 2rem;
+            padding-bottom: 1.75rem;
+        }
+        p-menubarsub {
+            width: 100%;
+            justify-content: flex-end;
+            display: flex;
+        }
+
+        .p-menubar
+            > p-menubarsub
+            > ul.p-menubar-root-list
+            > li.p-menubar-item[aria-level="1"]
+            p-menubarsub[ng-reflect-level="1"]
+            > .p-menubar-submenu
+            > li.p-menubar-item[aria-level="2"]
+            p-menubarsub[ng-reflect-level="2"]
+            > .p-menubar-submenu {
+            width: 260px;
+        }
+        .p-menubar
+            > p-menubarsub
+            > ul.p-menubar-root-list
+            > li.p-menubar-item[aria-level="1"]
+            p-menubarsub[ng-reflect-level="1"]
+            > .p-menubar-submenu
+            > li.p-menubar-item[aria-level="2"]:hover
+            p-menubarsub[ng-reflect-level="2"]
+            > .p-menubar-submenu {
+            display: block !important;
+            left: 100%;
+            top: 0;
+        }
+        .p-menubar
+            > p-menubarsub
+            > ul.p-menubar-root-list
+            > li.p-menubar-item[aria-level="1"]:hover
+            p-menubarsub[ng-reflect-level="1"]
+            > .p-menubar-submenu {
+            width: 260px;
+            display: block !important;
+            left: 0;
+            background: transparent;
+            border: 0;
+            padding: 0;
+            padding-top: 0.75rem;
+            border-bottom: 3px solid var(--secondaryclr);
+        }
+    }
+}
+@media (max-width: 960px) {
+    ::ng-deep {
+        .header-menubar .p-menubar {
+            padding: 1rem;
+        }
+        .p-menubar-mobile .p-menubar-button {
+            position: absolute;
+            right: 1rem;
+            color: #fff !important;
+            background: transparent !important;
+
+            .p-icon {
+                width: 1.75rem;
+                height: 1.75rem;
+                fill: #fff;
+            }
+        }
+        .header-menubar.fixed.scrolled {
+            .p-menubar-mobile .p-menubar-button {
+                color: #333 !important;
+            }
+        }
+    }
+}
+/*=====  End of NEW CSS ADDED FOR HEADER MENU  ======*/
