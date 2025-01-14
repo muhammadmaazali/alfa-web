@@ -60,4 +60,7 @@ export const routes: Routes = [
     { path: 'architectural-hvac-electrical', component: ArchitecturalAndHVACComponent },
     { path: 'thermal-and-acoustic-insulation-services', component: ThermalAndAcousticInsulationServicesComponent },
     { path: 'our-product-or-supplies', component: OurProductSuppliesComponent },
+    { path: 'our-milestones', component: OurProductSuppliesComponent },
+    { path: 'our-offices-and-facilities', component: OurProductSuppliesComponent },
+    { path: 'projects', component: OurProductSuppliesComponent },
 ];

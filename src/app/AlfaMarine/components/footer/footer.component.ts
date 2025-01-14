@@ -21,17 +21,17 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
     this.items = [
       // { label: 'Home' ,route:'/home'},
-      { label: 'Who we are (About Us)', styleClass: 'lg:col-4 p-0' },
-      { label: 'Vision, Mission ', styleClass: 'lg:col-4 p-0' },
-      { label: 'Core Values', styleClass: 'lg:col-4 p-0' },
-      { label: 'Sustainability ', styleClass: 'lg:col-4 p-0', },
-      { label: 'Accreditations  ', styleClass: 'lg:col-4 p-0', },
-      { label: 'Ethics & Compliance', styleClass: 'lg:col-4 p-0', route: '/contact-us' },
-      { label: 'Environmental Responsibility', styleClass: 'lg:col-4 p-0', route: '/contact-us' },
-      { label: 'HSE Policy', styleClass: 'lg:col-4 p-0', route: '/contact-us' },
+      { label: 'Who we are (About Us)', styleClass: 'lg:col-4 p-0' ,route:'/about-alfa' },
+      { label: 'Vision, Mission ', styleClass: 'lg:col-4 p-0' ,route:'/mission-and-vision'},
+      { label: 'Core Values', styleClass: 'lg:col-4 p-0' ,route:'/core-values'},
+      { label: 'Sustainability ', styleClass: 'lg:col-4 p-0',route:'/environmental-responsibility' },
+      { label: 'Accreditations  ', styleClass: 'lg:col-4 p-0',route:'/accreditations' },
+      { label: 'Ethics & Compliance', styleClass: 'lg:col-4 p-0', route: '/ethics-and-compliance' },
+      { label: 'Environmental Responsibility', styleClass: 'lg:col-4 p-0', route: '/environmental-responsibility' },
+      { label: 'HSE Policy', styleClass: 'lg:col-4 p-0', route: '/health-safety-environmental-policy' },
       { label: 'Contact us', styleClass: 'lg:col-4 p-0', route: '/contact-us' },
-      { label: 'Join Our Team (Career)', styleClass: 'lg:col-4 p-0', route: '/contact-us' },
-      { label: 'Download Center', styleClass: 'lg:col-4 p-0', route: '/contact-us' },
+      { label: 'Join Our Team (Career)', styleClass: 'lg:col-4 p-0', route: '/careers' },
+      { label: 'Download Center', styleClass: 'lg:col-4 p-0', route: '/downloads' },
     ];
   }
 }

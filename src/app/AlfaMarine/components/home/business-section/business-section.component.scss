@@ -14,15 +14,7 @@
         border-radius: 1rem;
         margin: 0 auto;
 
-        .section-header {
-            h2 {
-                font-size: 1rem;
-                margin: 0;
-                font-weight: 800;
-                text-transform: uppercase;
-                line-height: 1em;
-            }
-        }
+        
 
         .inner-overlay-content {
             h3 {
@@ -37,7 +29,15 @@
         }
     }
 }
-
+.section-header {
+    h2 {
+        font-family: "Montserrat-Arabic", sans-serif;
+        font-weight: 800;
+        font-size: clamp(2rem, 3vw, 2.5rem);
+        text-transform: uppercase;
+        line-height: 1em;
+    }
+}
 .cta:not(button),
 a.cta {
     color: #fff;
