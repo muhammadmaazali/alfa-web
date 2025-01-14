@@ -2,13 +2,14 @@
     <div class="container">
         <div class="grid">
             <div class="col-12 lg:col-4 xl:col-4">
-                <div class="footer-title">
-                    <h3><a href="#"><img src="assets/images/logos/logo-white.png" class="logo img-fluid"
-                                alt="ALFA Group"></a></h3>
+                <div class="footer-logo mb-5">
+                    <a href="#"><img src="assets/images/logos/logo-white.png" class="logo img-fluid"
+                            alt="ALFA Group"></a>
                 </div>
+
                 <address>
-                    <div class="flex flex-column flex flex-column gap-3 text-sm">
-                        <p class="m-0 flex gap-3"> <i class="pi pi-map-marker text-sm pt-2"></i>
+                    <div class="flex flex-column flex flex-column gap-2 text-sm">
+                        <p class="m-0 flex gap-3 mb-2"> <i class="pi pi-map-marker text-sm pt-2"></i>
                             Office No. 19, 3rd Floor, 4855 Building, <br>
                             Prince Mansour streent, <br>
                             Prince Muhammad IBN Saud Dist, Dammam 32241, EP, K.S.A
@@ -22,7 +23,7 @@
                             www.alfamarinesa.com
                         </p>
                         <ul
-                            class="social-media clean flex gap-3 justify-content-center lg:justify-content-start pl-0 lg:pl-5 ">
+                            class="social-media clean flex gap-3 mt-2 justify-content-center lg:justify-content-start pl-0 lg:pl-5 ">
                             <li> <a href="https://www.linkedin.com/company/afla-marine" target="_blank"><i
                                         class="pi pi-linkedin"></i> </a> </li>
                             <li> <a href="https://instgram.com/alfa_marine_sa" target="_blank"><i
@@ -35,8 +36,9 @@
                     </div>
                 </address>
             </div>
+
             <div class="col-12 lg:col-8">
-                <div class="footer-title px-4">
+                <div class="footer-title px-4 pt-2">
                     <h3>Quick Links</h3>
                 </div>
                 <p-menubar class="footer-menubar" [model]="items">
@@ -44,11 +46,8 @@
                         <!-- <img routerLink="/about-alfa" src="assets/images/logos/logo-white.png" class="header-logo img-fluid" alt="Logo"> -->
                     </ng-template>
                     <ng-template #item let-item let-root="root">
-
-                        <a pRipple class="flex items-center p-menubar-item-link" [routerLink]="item?.route">
+                        <a pRipple class="p-menubar-item-link" [routerLink]="item?.route">
                             <span>{{ item.label }}</span>
-                            <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }"
-                                [value]="item.badge" />
                             <span *ngIf="item.shortcut"
                                 class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1">{{
                                 item.shortcut }}</span>
@@ -60,31 +59,26 @@
                 </p-menubar>
             </div>
         </div>
-
-
-
-
-
-        <div class="site-footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="flex flex-column xl:flex-row gap-3 lg:justify-content-between">
-                            <p class="mb-0 text-xs text-white"> Copyright © 2025-2030, All
-                                rights
-                                reserved
-                                by ALFA Marine</p>
-                            <div class="flex gap-3 text-xs">
-                                <a href="#" target="_blank" class="text-decoration-underline">Privacy Policy</a>
-                                <a href="#" target="_blank" class="text-decoration-underline">Terms & Conditions</a>
-                            </div>
+    </div>
+    <div class="site-footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="flex flex-column xl:flex-row gap-3 lg:justify-content-between">
+                        <p class="mb-0 text-xs text-white"> Copyright © 2025-2030, All
+                            rights
+                            reserved
+                            by ALFA Marine</p>
+                        <div class="flex gap-3 text-xs">
+                            <a href="#" target="_blank" class="text-decoration-underline">Privacy Policy</a>
+                            <a href="#" target="_blank" class="text-decoration-underline">Terms & Conditions</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <button (click)="scrollToTop()" class="scroll-to-top">
-                <i class="pi pi-arrow-up"></i>
-            </button>
         </div>
+        <button (click)="scrollToTop()" class="scroll-to-top">
+            <i class="pi pi-arrow-up"></i>
+        </button>
     </div>
 </footer>

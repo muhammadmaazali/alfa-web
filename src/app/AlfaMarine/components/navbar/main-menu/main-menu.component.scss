@@ -1,5 +1,23 @@
 ::ng-deep {
     .header-menubar {
+        .p-menubar {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            padding: 0;
+        }
+    }
+}
+
+.header-menubar {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+::ng-deep {
+    .header-menubar {
         p-menubarsub {
             width: 100%;
             justify-content: flex-end;
