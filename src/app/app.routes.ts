@@ -62,7 +62,7 @@ export const routes: Routes = [
     { path: 'thermal-and-acoustic-insulation-services', component: ThermalAndAcousticInsulationServicesComponent },
     { path: 'our-product-or-supplies', component: OurProductSuppliesComponent },
     { path: 'our-milestones', component: OurProductSuppliesComponent },
-    { path: 'our-client', component: OurClientsComponent },
+    { path: 'our-clients', component: OurClientsComponent },
     { path: 'our-offices-and-facilities', component: OurProductSuppliesComponent },
     { path: 'projects', component: OurProductSuppliesComponent },
 ];
