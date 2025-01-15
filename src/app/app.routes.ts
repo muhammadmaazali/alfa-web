@@ -27,6 +27,7 @@ import { CareersComponent } from './AlfaMarine/components/careers/careers.compon
 import { SPEAKUPComponent } from './AlfaMarine/components/speakup/speakup.component';
 import { DownloadComponent } from './AlfaMarine/components/download/download.component';
 import { ContactUsComponent } from './AlfaMarine/components/contact-us/contact-us.component';
+import { OurClientsComponent } from './AlfaMarine/components/our-clients/our-clients.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -61,6 +62,7 @@ export const routes: Routes = [
     { path: 'thermal-and-acoustic-insulation-services', component: ThermalAndAcousticInsulationServicesComponent },
     { path: 'our-product-or-supplies', component: OurProductSuppliesComponent },
     { path: 'our-milestones', component: OurProductSuppliesComponent },
+    { path: 'our-client', component: OurClientsComponent },
     { path: 'our-offices-and-facilities', component: OurProductSuppliesComponent },
     { path: 'projects', component: OurProductSuppliesComponent },
 ];
