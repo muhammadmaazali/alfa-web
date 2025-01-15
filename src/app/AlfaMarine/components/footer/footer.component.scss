@@ -36,14 +36,14 @@ address p,
     bottom: 20px;
     right: 20px;
     padding: 8px 12px;
-    background-color: #007bff;
+    background-color: #fff;
     color: white;
     border: none;
     border-radius: 8px;
 }
 
 .scroll-to-top:hover {
-    background-color: #0056b3;
+    background-color: var(--primaryclr);
 }
 .footer-title {
     h3 {
