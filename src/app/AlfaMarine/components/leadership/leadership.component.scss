@@ -51,6 +51,7 @@ a {
 .management-team-wrapper img {
     width: 100%;
     transition: transform 0.4s;
+    min-height: 500px;
 }
 
 .management-team-wrapper .management-team-title {
@@ -59,7 +60,8 @@ a {
     width: 100%;
     z-index: 1;
     background: #fff;
-    padding-top: 17px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .management-team-wrapper:hover .management-team-title {
     background: none;
@@ -71,14 +73,14 @@ a {
 }
 .management-team-wrapper .management-team-title h4 {
     color: #003c34;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     margin-bottom: 0px;
 }
 
 .management-team-wrapper .management-team-title span {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     color: #4d4d4d;
     padding-right: 80px;
     min-height: 3em;
