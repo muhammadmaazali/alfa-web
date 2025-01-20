@@ -22,15 +22,23 @@ ul.clean {
     }
 }
 
-address p,
-.social-media a {
+address p {
     color: #fff;
+}
+.site-footer-bottom a,
+.social-media a {
+    color: var(--secondaryclr);
     transition: 0.3s ease;
     &:hover {
-        color: var(--clr-blue);
+        color: #fff;
     }
 }
-
+address * {
+    font-size: 13px;
+}
+.site-footer .logo {
+    width: 170px;
+}
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -118,4 +126,7 @@ address p,
 
 .site-footer-bottom {
     background-color: #1a2e5e;
+    margin-top: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
