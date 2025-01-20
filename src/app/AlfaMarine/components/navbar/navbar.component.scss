@@ -19,6 +19,12 @@
         -moz-border-radius: 0.5rem;
         -ms-border-radius: 0.5rem;
         -o-border-radius: 0.5rem;
+        a {
+            color: #fff;
+            &:hover {
+                background-color: var(--primaryclr);
+            }
+        }
         &:hover {
             background-color: var(--primaryclr);
             border: 1px solid #fff;
