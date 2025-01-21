@@ -26,6 +26,51 @@
             font-size: 16px;
         }
     }
+    .header-menubar
+        .p-menubar
+        .p-menubar-start
+        + .p-menubar-button
+        + p-menubarsub
+        .p-menubar-root-list
+        li.p-menubar-item[aria-level="1"]
+        p-menubarsub
+        .p-menubar-submenu
+        li.p-menubar-item
+        .p-menubar-item-link {
+        transition: all 500ms ease;
+        padding-top: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #f2f2f2;
+        margin: 0 0.75rem;
+        padding: 0.75rem 0;
+        color: #78787a;
+        font-family: "Roboto", sans-sersif;
+        font-weight: 700;
+        font-size: 14px;
+        &:hover {
+            border-bottom: 1px solid var(--secondaryclr);
+            color: var(--secondaryclr);
+        }
+    }
+
+    .header-menubar
+        .p-menubar
+        .p-menubar-start
+        + .p-menubar-button
+        + p-menubarsub
+        .p-menubar-root-list
+        li.p-menubar-item[aria-level="1"]:hover
+        > p-menubarsub
+        > .p-menubar-submenu {
+        background: #fff;
+        border: 0;
+        padding: 0 !important;
+        padding-top: 0.75rem !important;
+        border-bottom: 3px solid var(--secondaryclr);
+        box-shadow:
+            2px 2px 5px 1px rgba(0, 0, 0, 0.05),
+            -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+    }
 }
 
 .fixed {
@@ -41,6 +86,7 @@
     -moz-transition: top 0.3s ease;
     -ms-transition: top 0.3s ease;
     -o-transition: top 0.3s ease;
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .scrolled {
@@ -115,7 +161,7 @@
             > li.p-menubar-item[aria-level="1"]
             > .p-menubar-item-content
             > .p-menubar-item-link {
-            color: var(--secondaryclr);
+            color: var(--primaryclr);
             &:hover {
                 color: var(--primaryclr);
             }
@@ -174,38 +220,8 @@
             background: #fff;
             border: 0;
             padding: 0 !important;
-            padding-top: 0.75rem !important;
-            border-bottom: 3px solid var(--secondaryclr);
-            box-shadow:
-                2px 2px 5px 1px rgba(0, 0, 0, 0.05),
-                -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
         }
-        .header-menubar
-            .p-menubar
-            .p-menubar-start
-            + .p-menubar-button
-            + p-menubarsub
-            .p-menubar-root-list
-            li.p-menubar-item[aria-level="1"]
-            p-menubarsub
-            .p-menubar-submenu
-            li.p-menubar-item
-            .p-menubar-item-link {
-            transition: all 500ms ease;
-            padding-top: 1rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid #f2f2f2;
-            margin: 0 0.75rem;
-            padding: 0.75rem 0;
-            color: #78787a;
-            font-family: "Roboto", sans-sersif;
-            font-weight: 700;
-            font-size: 14px;
-            &:hover {
-                border-bottom: 1px solid var(--secondaryclr);
-                color: var(--secondaryclr);
-            }
-        }
+
         .header-menubar
             .p-menubar
             .p-menubar-start
@@ -229,20 +245,42 @@
         .p-menubar-mobile .p-menubar-button {
             position: absolute;
             right: 1rem;
-            color: #fff !important;
-            background: transparent !important;
+            color: #fff;
+            background: var(--secondaryclr) !important;
+            border-radius: 4px !important;
+            padding: 7px !important;
+            width: 32px;
+            height: 32px;
 
             .p-icon {
-                width: 1.75rem;
-                height: 1.75rem;
-                fill: #fff;
+                width: 1.25rem;
+                height: 1.25rem;
             }
         }
-        .header-menubar.fixed.scrolled {
-            .p-menubar-mobile .p-menubar-button {
-                color: #333 !important;
-            }
+        .p-menubar-button:hover {
+            color: #fff !important;
+        }
+        .header-menubar .p-menubar-root-list {
+            gap: 0rem;
         }
     }
 }
 /*=====  End of NEW CSS ADDED FOR HEADER MENU  ======*/
+
+@media (min-width: 961px) and (max-width: 1199px) {
+    ::ng-deep {
+        .header-menubar
+            .p-menubar
+            > p-menubarsub
+            > ul.p-menubar-root-list
+            > li.p-menubar-item[aria-level="1"]
+            .p-menubar-item-content
+            .p-menubar-item-link {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .header-menubar .p-menubar-root-list {
+            gap: 0.15rem;
+        }
+    }
+}
