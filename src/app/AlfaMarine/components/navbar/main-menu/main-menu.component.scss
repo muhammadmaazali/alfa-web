@@ -247,6 +247,9 @@
         .header-menubar .p-menubar {
             padding: 1rem;
         }
+        .p-menubar-mobile .p-menubar-root-list {
+            background-color: #fff !important;
+        }
         .p-menubar-mobile .p-menubar-button {
             position: absolute;
             right: 1rem;
