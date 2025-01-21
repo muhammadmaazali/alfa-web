@@ -220,6 +220,11 @@
             background: #fff;
             border: 0;
             padding: 0 !important;
+            padding-top: 0.75rem !important;
+            border-bottom: 3px solid var(--secondaryclr);
+            box-shadow:
+                2px 2px 5px 1px rgba(0, 0, 0, 0.05),
+                -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
         }
 
         .header-menubar
