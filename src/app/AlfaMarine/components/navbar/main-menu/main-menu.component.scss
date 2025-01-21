@@ -21,8 +21,9 @@
         }
 
         .p-menubar-root-list > .p-menubar-item > .p-menubar-item-content > .p-menubar-item-link {
-            font-size: 15px;
-            font-weight: 600;
+            font-family: "Roboto", sans-sersif;
+            font-weight: 700;
+            font-size: 16px;
         }
     }
 }
@@ -35,19 +36,23 @@
     width: 100%;
     background-color: #ffffff;
     width: 100%;
+    transition: top 0.3s ease;
+    -webkit-transition: top 0.3s ease;
+    -moz-transition: top 0.3s ease;
+    -ms-transition: top 0.3s ease;
+    -o-transition: top 0.3s ease;
 }
 
 .scrolled {
     background-color: #ffffff;
     width: 100%;
-    /* Change to your desired background color */
-    // color: white;
-    /* Optional: Change text color */
 }
 
 ::ng-deep .header-menubar {
     .p-menubar-root-list > .p-menubar-item > .p-menubar-item-content {
         background-color: transparent;
+        display: block;
+        margin-bottom: 0.75rem;
     }
     .p-menubar-item:not(.p-disabled) > .p-menubar-item-content:hover {
         background-color: transparent;
@@ -85,41 +90,6 @@
     }
 }
 
-::ng-deep .header-menubar {
-    .p-menubar
-        > p-menubarsub
-        > ul.p-menubar-root-list
-        > li.p-menubar-item[aria-level="1"]
-        p-menubarsub[ng-reflect-level="1"]
-        > .p-menubar-submenu
-        > li.p-menubar-item[aria-level="2"] {
-        background: #fff;
-        .p-menubar-item-content {
-            .p-menubar-item-link {
-                border-bottom: 1px solid #f2f2f2;
-                padding-top: 0.75rem;
-                padding-bottom: 0.75rem;
-                font-size: 0.875rem;
-            }
-        }
-    }
-    .p-menubar
-        > p-menubarsub
-        > ul.p-menubar-root-list
-        > li.p-menubar-item[aria-level="1"]
-        p-menubarsub[ng-reflect-level="1"]
-        > .p-menubar-submenu
-        > li.p-menubar-item[aria-level="2"]:not(:last-child):hover {
-        background: #fff;
-        .p-menubar-item-content {
-            .p-menubar-item-link {
-                border-bottom: 1px solid var(--primaryclr);
-                font-size: 0.875rem;
-            }
-        }
-    }
-}
-
 /*=============================================
 =            NEW CSS ADDED FOR HEADER MENU            =
 =============================================*/
@@ -138,16 +108,16 @@
                 color: var(--secondaryclr);
             }
         }
-        .header-menubar.fixed.scrolled
+        .header-menubar.fixed
             .p-menubar
             > p-menubarsub
             > ul.p-menubar-root-list
             > li.p-menubar-item[aria-level="1"]
             > .p-menubar-item-content
             > .p-menubar-item-link {
-            color: var(--primaryclr);
+            color: var(--secondaryclr);
             &:hover {
-                color: var(--secondaryclr);
+                color: var(--primaryclr);
             }
         }
         .header-menubar
@@ -160,23 +130,23 @@
             padding-top: 2rem;
             padding-bottom: 1.75rem;
         }
-        p-menubarsub {
+
+        .p-menubar-submenu {
+            width: 270px;
+            border-radius: 0 !important;
+        }
+
+        .p-menubar-submenu .p-menubar-item[aria-level="2"]:hover ul {
+            display: block !important;
+            left: 100%;
+            top: 0;
+        }
+        .header-menubar .p-menubar .p-menubar-start + .p-menubar-button + p-menubarsub {
             width: 100%;
             justify-content: flex-end;
             display: flex;
         }
 
-        .p-menubar
-            > p-menubarsub
-            > ul.p-menubar-root-list
-            > li.p-menubar-item[aria-level="1"]
-            p-menubarsub[ng-reflect-level="1"]
-            > .p-menubar-submenu
-            > li.p-menubar-item[aria-level="2"]
-            p-menubarsub[ng-reflect-level="2"]
-            > .p-menubar-submenu {
-            width: 260px;
-        }
         .p-menubar
             > p-menubarsub
             > ul.p-menubar-root-list
@@ -190,20 +160,64 @@
             left: 100%;
             top: 0;
         }
-        .p-menubar
+        .header-menubar
+            .p-menubar
+            .p-menubar-start
+            + .p-menubar-button
+            + p-menubarsub
+            .p-menubar-root-list
+            li.p-menubar-item[aria-level="1"]:hover
             > p-menubarsub
-            > ul.p-menubar-root-list
-            > li.p-menubar-item[aria-level="1"]:hover
-            p-menubarsub[ng-reflect-level="1"]
             > .p-menubar-submenu {
-            width: 260px;
             display: block !important;
             left: 0;
-            background: transparent;
+            background: #fff;
             border: 0;
-            padding: 0;
-            padding-top: 0.75rem;
+            padding: 0 !important;
+            padding-top: 0.75rem !important;
             border-bottom: 3px solid var(--secondaryclr);
+            box-shadow:
+                2px 2px 5px 1px rgba(0, 0, 0, 0.05),
+                -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+        }
+        .header-menubar
+            .p-menubar
+            .p-menubar-start
+            + .p-menubar-button
+            + p-menubarsub
+            .p-menubar-root-list
+            li.p-menubar-item[aria-level="1"]
+            p-menubarsub
+            .p-menubar-submenu
+            li.p-menubar-item
+            .p-menubar-item-link {
+            transition: all 500ms ease;
+            padding-top: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #f2f2f2;
+            margin: 0 0.75rem;
+            padding: 0.75rem 0;
+            color: #78787a;
+            font-family: "Roboto", sans-sersif;
+            font-weight: 700;
+            font-size: 14px;
+            &:hover {
+                border-bottom: 1px solid var(--secondaryclr);
+                color: var(--secondaryclr);
+            }
+        }
+        .header-menubar
+            .p-menubar
+            .p-menubar-start
+            + .p-menubar-button
+            + p-menubarsub
+            .p-menubar-root-list
+            li.p-menubar-item[aria-level="1"]
+            p-menubarsub
+            .p-menubar-submenu
+            li.p-menubar-item:last-child
+            .p-menubar-item-link {
+            border-bottom: 0;
         }
     }
 }
