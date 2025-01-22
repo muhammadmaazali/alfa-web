@@ -27,7 +27,8 @@ a {
     display: inline-block;
 }
 .management-team-wrapper:hover {
-    background-color: #003c34;
+    // background-color: #003c34;
+    background-color: var(--secondaryclr);
 }
 .management-team-wrapper:hover .border-process {
     opacity: 1 !important;
@@ -69,22 +70,32 @@ a {
     left: 40px;
 }
 .management-team-wrapper:hover .management-team-title h4 {
-    color: #e5a93f;
+    // color: #e5a93f;
+    // color: var(--primaryclr);
+    color: #fff;
 }
 .management-team-wrapper .management-team-title h4 {
-    color: #003c34;
-    font-size: 22px;
-    font-weight: 500;
+    // color: #003c34;
+    color: var(--secondaryclr);
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 0px;
 }
 
 .management-team-wrapper .management-team-title span {
-    font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
     color: #4d4d4d;
     padding-right: 80px;
     min-height: 3em;
+    font-weight: 600;
+    line-height: 1.5;
 }
 .management-team-wrapper:hover .management-team-title span {
     color: #fff;
+}
+
+@media (min-width: 992px) {
+    .management-team-wrapper img {
+        min-height: 500px;
+    }
 }
