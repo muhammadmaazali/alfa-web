@@ -72,6 +72,9 @@
             2px 2px 5px 1px rgba(0, 0, 0, 0.05),
             -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
     }
+    .header-menubar .p-menubar-submenu {
+        background-color: #fff !important;
+    }
 }
 
 .fixed {
@@ -181,9 +184,6 @@
         .p-menubar-submenu {
             width: 270px;
             border-radius: 0 !important;
-        }
-        .header-menubar .p-menubar-submenu {
-            background-color: #fff;
         }
 
         .p-menubar-submenu .p-menubar-item[aria-level="2"]:hover ul {
