@@ -8,29 +8,40 @@
                 </div>
 
                 <address>
-                    <div class="social-media flex flex-column flex flex-column gap-2">
-                        <p class="m-0 flex gap-3 mb-2"> <i class="pi pi-map-marker pt-2"></i>
+                    <div class="flex flex-column flex flex-column gap-2">
+                        <p class="m-0 flex gap-3 mb-2">
+                            <!-- <i class="pi pi-map-marker pt-2"></i> -->
                             Prince Muhammad Ibn Saud Dist, <br>
                             <!-- Prince Mansour streent, <br> -->
                             Dammam, Kingdom of Saudi Arabia
                         </p>
-                        <p class="m-0 flex align-items-center gap-3">
+                        <div class="flex align-items-center gap-2">
+                            <p class="m-0 flex align-items-center gap-3">
+                                <a href="#" class="m-0 flex align-items-center gap-3">
+                                    <!-- <i class="pi pi-phone"></i> -->
+                                    +966 13 805 2528
+                                </a>
+                            </p>
+                            <div style="border-right: 1px solid #a7afc2;
+                            margin-top: 2px;
+                            height: 14px;"></div>
+                            <p class="m-0 flex align-items-center gap-3">
+                                <a href="#" class="m-0 flex align-items-center gap-3">
+                                    <!-- <i class="pi pi-envelope"></i>  -->
+                                    info&#64;alfamarinesa.com
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- <p>
                             <a href="#" class="m-0 flex align-items-center gap-3">
-                                <i class="pi pi-phone"></i> +966 13 805 2528
+                                <i class="pi pi-globe"></i> 
+                                www.alfamarinesa.com
                             </a>
-                        </p>
-                        <p class="m-0 flex align-items-center gap-3">
-                            <a href="#" class="m-0 flex align-items-center gap-3">
-                                <i class="pi pi-envelope"></i> info&#64;alfamarinesa.com
-                            </a>
-                        </p>
-                        <p>
-                            <a href="#" class="m-0 flex align-items-center gap-3">
-                                <i class="pi pi-globe"></i> www.alfamarinesa.com
-                            </a>
-                        </p>
-                        <ul
-                            class="social-media clean flex gap-3 justify-content-center lg:justify-content-start pl-0 lg:pl-5 ">
+                        </p> -->
+                        <hr style="border-color: #a7afc2;  opacity: .3;" class="w-full lg:w-9 my-2">
+
+                        <ul class="social-media clean flex gap-3">
                             <li> <a href="https://www.linkedin.com/company/afla-marine" target="_blank"><i
                                         class="pi pi-linkedin"></i> </a> </li>
                             <li> <a href="https://instgram.com/alfa_marine_sa" target="_blank"><i
@@ -43,10 +54,10 @@
             </div>
 
             <div class="col-12 lg:col-8">
-                <div class="footer-title px-4 pt-2">
+                <div class="footer-title lg:px-4 pt-2">
                     <h3>Quick Links</h3>
                 </div>
-                <p-menubar class="footer-menubar" [model]="items">
+                <p-menubar class="footer-menubar" styleClass="-ml-4 lg:ml-auto" [model]="items">
                     <ng-template #start>
                         <!-- <img routerLink="/about-alfa" src="assets/images/logos/logo-white.png" class="header-logo img-fluid" alt="Logo"> -->
                     </ng-template>

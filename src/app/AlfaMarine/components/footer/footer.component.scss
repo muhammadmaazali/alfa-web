@@ -25,16 +25,33 @@ ul.clean {
 address p {
     color: #fff;
 }
-.site-footer-bottom a,
-.social-media a {
+// address i {
+//     display: none;
+// }
+.site-footer-bottom a {
     color: var(--secondaryclr);
     transition: 0.3s ease;
     &:hover {
         color: #fff;
     }
 }
+
+.social-media a {
+    transition: 0.3s ease;
+    color: #fff;
+    &:hover {
+        color: var(--secondaryclr);
+    }
+}
 address * {
     font-size: 14px;
+}
+address a {
+    transition: 0.3s ease;
+    color: var(--secondaryclr);
+    &:hover {
+        color: #fff;
+    }
 }
 .site-footer .logo {
     width: 170px;
@@ -55,13 +72,13 @@ address * {
 }
 .footer-title {
     h3 {
-        color: #fff;
-        font-size: 1.25rem;
-        font-weight: 600;
         position: relative;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        padding-bottom: 12px;
         text-transform: capitalize;
-        margin-bottom: 1rem;
-        padding-bottom: 0.75rem;
+        font-family: "Roboto", sans-serif;
     }
     h3:after {
         position: absolute;
@@ -76,6 +93,8 @@ address * {
 
 ::ng-deep {
     .footer-menubar {
+        .p-menubar-item-content,
+        .p-menubar-item.p-focus > .p-menubar-item-content,
         .p-menubar-item:not(.p-disabled) > .p-menubar-item-content:hover {
             background-color: transparent;
         }
@@ -86,11 +105,12 @@ address * {
             .p-menubar-item-link {
                 position: relative;
                 color: #c4c4c4;
-                font-size: 14px;
+                font-size: 13px;
                 padding-bottom: 5px;
                 transition: all 300ms ease;
                 &:hover {
-                    color: var(--secondaryclr);
+                    // color: var(--secondaryclr);
+                    color: #fff;
                 }
                 &:after {
                     position: absolute;
@@ -114,7 +134,7 @@ address * {
         .p-menubar-mobile .p-menubar-root-list {
             display: block;
             position: relative;
-            background: transparent;
+            background: transparent !important;
             border: 0;
             box-shadow: none;
         }
