@@ -182,6 +182,9 @@
             width: 270px;
             border-radius: 0 !important;
         }
+        .header-menubar .p-menubar-submenu {
+            background-color: #fff;
+        }
 
         .p-menubar-submenu .p-menubar-item[aria-level="2"]:hover ul {
             display: block !important;
