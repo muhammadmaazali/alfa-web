@@ -4,7 +4,6 @@ import { PrimeNgModule } from './shared/prime-ng/prime-ng.module';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { NavbarComponent } from './AlfaMarine/components/navbar/navbar.component';
 import { FooterComponent } from './AlfaMarine/components/footer/footer.component';
-import { trigger, transition, style, animate } from '@angular/animations';
 import AOS from 'aos';
 
 @Component({
@@ -13,14 +12,6 @@ import AOS from 'aos';
   imports: [RouterOutlet, PrimeNgModule, NavbarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  // animations: [
-  //   trigger('fadeIn', [
-  //     transition(':enter', [
-  //       style({ opacity: 0 }),
-  //       animate('1s', style({ opacity: 1 }))
-  //     ])
-  //   ])
-  // ]
 })
 export class AppComponent {
 
@@ -34,29 +25,11 @@ export class AppComponent {
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
-      // once: true,
       once: false,
       offset: 120,
 
     });
-
   }
 
   ref: DynamicDialogRef | undefined;
-
-
-
-
-  // addContractDialog() {
-  //   this.ref = this.dialogService.open(NewContractDialogComponent, {
-  //     header: 'Add New Contract',
-  //     width: '30%',
-  //     contentStyle: { overflow: 'auto' },
-  //     styleClass: 'png-dialogbox',
-  //     baseZIndex: 10000,
-  //     closable: true,
-  //     modal: true,
-  //     footer: '.'
-  //   });
-  // }
 }
