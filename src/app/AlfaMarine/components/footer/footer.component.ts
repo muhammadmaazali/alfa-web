@@ -43,7 +43,7 @@ export class FooterComponent implements OnInit {
   }
   toggleScrollToTopButton() {
     const scrollToTopButton = document.getElementById('scrollToTopButton');
-    if (window.scrollY > 200) {
+    if (window.scrollY > 150) {
       scrollToTopButton!.style.display = 'block';
     } else {
       scrollToTopButton!.style.display = 'none';

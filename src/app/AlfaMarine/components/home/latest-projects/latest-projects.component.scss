@@ -24,7 +24,11 @@
     padding: 20px;
     background-color: #263745;
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
+    justify-content: center;
+    .branded.slab::before,
+    [data-brand].slab::before {
+    }
 }
 
 .project-rightside {

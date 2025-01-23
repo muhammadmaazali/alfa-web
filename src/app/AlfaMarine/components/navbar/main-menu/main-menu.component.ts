@@ -47,7 +47,7 @@ export class MainMenuComponent implements OnInit {
               label: 'Our Solutions',
               items:
                 [
-                  { label: ' Modular buildings solutions', route: '/modular-buildings-solutions'  },
+                  { label: ' Modular buildings solutions', route: '/modular-buildings-solutions' },
                   { label: 'Living Quarters Refurbishment, Upgrade & Conversion solutions ', route: '/living-quarters-refurbishment' },
                   { label: ' Repair & Maintenance of HVAC, Piping & Electrical Systems', route: '/repair-and-maintenance-of-hvac' },
                   { label: '  Rig & Ship Repair solutions', route: '/rig-and-ship-repair-solutions' },
@@ -63,17 +63,17 @@ export class MainMenuComponent implements OnInit {
                   { label: ' Thermal And Acoustic Insulation Services ', route: '/thermal-and-acoustic-insulation-services' },
                 ]
             },
-            { label: 'Our Product / Supplies' ,route:'/our-product-or-supplies' },
+            { label: 'Our Product / Supplies', route: '/our-product-or-supplies' },
           ],
       },
-      { label: 'Projects' ,route:'/projects'},
+      { label: 'Projects', route: '/projects' },
       {
         label: 'Sustainability ',
         items:
           [
-            { label: 'Environmental Responsibility',route:'/environmental-responsibility' },
-            { label: 'Health, Safety & Environmental Policy ',route:'/health-safety-environmental-policy' },
-            { label: 'Quality Assurance Policy', route:'/quality-assurance-policy' },
+            { label: 'Environmental Responsibility', route: '/environmental-responsibility' },
+            { label: 'Health, Safety & Environmental Policy ', route: '/health-safety-environmental-policy' },
+            { label: 'Quality Assurance Policy', route: '/quality-assurance-policy' },
           ]
       },
       {
@@ -82,18 +82,18 @@ export class MainMenuComponent implements OnInit {
           [
             { label: 'News' },
             { label: 'Gallery ' },
-            { label: 'Downloads', route:'/downloads' },
+            { label: 'Downloads', route: '/downloads' },
           ]
       },
       {
         label: 'Contact us ',
-        route:'/contact-us',
+        route: '/contact-us',
         items:
           [
-            { label: 'Commercial Inquiries',route:'/commercial-inquiries' },
-            { label: 'Careers ',route:'/careers' },
-            { label: 'Become a Supplier',route:'/become-a-supplier' },
-            { label: 'Speak UP',route:'/speak-up' },
+            { label: 'Commercial Inquiries', route: '/commercial-inquiries' },
+            { label: 'Careers ', route: '/careers' },
+            { label: 'Become a Supplier', route: '/become-a-supplier' },
+            { label: 'Speak UP', route: '/speak-up' },
           ]
       },
     ];
