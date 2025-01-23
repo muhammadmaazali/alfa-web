@@ -54,7 +54,7 @@
     background-image: url("../../../src/assets/images/slab-aqua.svg");
     background-size: cover;
     position: absolute;
-    top: 110%;
+    top: 95%;
     transform: translate(-42%, -50%);
     -webkit-margin-start: 16px;
     margin-inline-start: 16px;
@@ -68,15 +68,15 @@
     -o-transform: translate(-42%, -50%);
 }
 .txt-description {
-    color: #002438;
-    font-size: 0.9375rem;
+    color: black;
+    font-size: 1.125rem;
     line-height: 1.5rem;
     margin: 0;
 }
 .txt-big {
     font-size: 1.125rem;
     line-height: 1.75rem;
-    color: #002438;
+    color: black;
     margin: 0;
 }
 

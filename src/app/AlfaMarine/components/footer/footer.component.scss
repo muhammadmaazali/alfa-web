@@ -29,10 +29,10 @@ address p {
 //     display: none;
 // }
 .site-footer-bottom a {
-    color: var(--secondaryclr);
+    color: #fff;
     transition: 0.3s ease;
     &:hover {
-        color: #fff;
+        color: var(--secondaryclr);
     }
 }
 
@@ -61,15 +61,20 @@ address a {
     bottom: 20px;
     right: 20px;
     padding: 8px 12px;
-    background-color: #fff;
+    background: transparent;
     color: white;
     border: none;
     border-radius: 8px;
 }
-
-.scroll-to-top:hover {
-    background-color: var(--primaryclr);
+.footer-svg{
+    fill: #3095d2;
 }
+.footer-svg:hover{
+    fill: #21396d;
+}
+// .scroll-to-top:hover {
+//     background-color: var(--primaryclr);
+// }
 .footer-title {
     h3 {
         position: relative;

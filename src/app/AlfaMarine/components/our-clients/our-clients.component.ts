@@ -35,9 +35,9 @@ export class OurClientsComponent {
     margin: 15,
     dots: false,
     slideTransition: 'linear',
-    autoplayTimeout: 1,
+    autoplayTimeout: 5000,
     autoplayHoverPause: false,
-    autoplaySpeed: 4500,
+    autoplaySpeed: 5000,
     responsive: {
       0: { items: 1 }, // Small screens
       500: { items: 2 }, // Slightly larger screens

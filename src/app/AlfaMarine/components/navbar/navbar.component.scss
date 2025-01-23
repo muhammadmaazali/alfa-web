@@ -33,7 +33,7 @@
 }
 
 .banner-image {
-    background-image: url("../../../../assets/images/banner-image-bg.png");
+    background-image: url("../../../../assets/images/HomePage-Image.jpg");
     background-size: cover;
     background-position: center;
     min-height: 730px;
@@ -64,12 +64,12 @@
     }
 
     span + span {
-        color: var(--primaryclr);
+        color: var(--secondaryclr);
     }
 }
 
 .text-secondaryclr {
-    color: var(--bg-secondaryclr);
+    color:#ffff;
 }
 
 .hero-section {
