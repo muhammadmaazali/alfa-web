@@ -25,6 +25,9 @@
     background-color: #263745;
     display: flex;
     justify-content: flex-end;
+    .branded.slab::before,
+    [data-brand].slab::before {
+    }
 }
 
 .project-rightside {

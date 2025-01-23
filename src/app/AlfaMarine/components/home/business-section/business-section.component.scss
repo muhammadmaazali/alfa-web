@@ -10,11 +10,9 @@
     padding-bottom: 2rem;
 
     .inner-overlay {
-        background: rgba(0, 3, 5, 0.4);
+        background: rgba(0, 0, 0, 0.5);
         border-radius: 1rem;
         margin: 0 auto;
-
-        
 
         .inner-overlay-content {
             h3 {
@@ -54,8 +52,8 @@ button.cta:not(.active):hover {
 
 .projectimg-list {
     li {
-        >div {
-            height: 107px;
+        > div {
+            // height: 107px;
 
             img {
                 width: 100%;
@@ -82,11 +80,21 @@ button.cta:not(.active):hover {
             align-items: center;
         }
 
-        p {
+        p.text-limit {
             font-size: 13px;
             line-height: 1.25em;
             margin-top: 1em;
             color: #fff;
+
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+
+            max-height: 4.5em;
+            line-height: 1.5em;
         }
 
         .cta:not(button) .icon,

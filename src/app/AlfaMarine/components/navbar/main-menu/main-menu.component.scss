@@ -253,6 +253,11 @@
         .header-menubar .p-menubar {
             padding: 1rem;
         }
+        .p-menubar-mobile-active .p-menubar-root-list {
+            width: 90% !important;
+            margin: 0 auto;
+            right: 0;
+        }
         .p-menubar-mobile .p-menubar-root-list {
             background-color: #fff !important;
         }
