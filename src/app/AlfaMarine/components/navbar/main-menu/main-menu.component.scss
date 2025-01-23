@@ -250,31 +250,17 @@
                 2px 2px 5px 1px rgba(0, 0, 0, 0.05),
                 -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
 
-            // visibility: visible;
-            // opacity: 1;
-            // top: 100%;
-            // margin-top: 10px;
-            // transition: all 500ms ease;
-            // -moz-transition: all 500ms ease;
-            // -webkit-transition: all 500ms ease;
-            // -ms-transition: all 500ms ease;
-            // -o-transition: all 500ms ease;
-
             z-index: 999;
             opacity: 1;
             visibility: visible;
-            -op-animation-name: fadeInDown;
-            -webkit-animation-name: fadeInDown;
             animation-name: fadeInDown;
-            -op-animation-duration: 500ms;
-            -webkit-animation-duration: 500ms;
+            -webkit-animation-name: fadeInDown;
             animation-duration: 500ms;
-            -op-animation-timing-function: linear;
-            -webkit-animation-timing-function: linear;
+            -webkit-animation-duration: 500ms;
             animation-timing-function: linear;
-            -op-animation-iteration-count: 1;
-            -webkit-animation-iteration-count: 1;
+            -webkit-animation-timing-function: linear;
             animation-iteration-count: 1;
+            -webkit-animation-iteration-count: 1;
             box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
         }
 
@@ -306,18 +292,14 @@
             z-index: 999;
             opacity: 1;
             visibility: visible;
-            -op-animation-name: fadeInDown;
-            -webkit-animation-name: fadeInDown;
             animation-name: fadeInDown;
-            -op-animation-duration: 500ms;
-            -webkit-animation-duration: 500ms;
+            -webkit-animation-name: fadeInDown;
             animation-duration: 500ms;
-            -op-animation-timing-function: linear;
-            -webkit-animation-timing-function: linear;
+            -webkit-animation-duration: 500ms;
             animation-timing-function: linear;
-            -op-animation-iteration-count: 1;
-            -webkit-animation-iteration-count: 1;
+            -webkit-animation-timing-function: linear;
             animation-iteration-count: 1;
+            -webkit-animation-iteration-count: 1;
             box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
         }
         .p-menubar-mobile .p-menubar-root-list {
