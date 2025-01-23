@@ -60,11 +60,15 @@ address a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 8px 12px;
-    background: transparent;
+    padding: 8px;
+    background-color: transparent;
     color: white;
     border: none;
     border-radius: 8px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.1);
 }
 .footer-svg{
     fill: #3095d2;

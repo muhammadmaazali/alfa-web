@@ -15,18 +15,18 @@ import { RouterModule } from '@angular/router';
 
 export class FooterComponent implements OnInit {
   items: MenuItem[] | undefined;
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+
+
 
   ngOnInit() {
+    window.addEventListener('scroll', this.toggleScrollToTopButton);
     this.items = [
       // { label: 'Home' ,route:'/home'},
-      { label: 'Who we are', styleClass: 'lg:col-4 p-0' ,route:'/about-alfa' },
-      { label: 'Vision, Mission ', styleClass: 'lg:col-4 p-0' ,route:'/mission-and-vision'},
-      { label: 'Core Values', styleClass: 'lg:col-4 p-0' ,route:'/core-values'},
-      { label: 'Sustainability ', styleClass: 'lg:col-4 p-0',route:'/environmental-responsibility' },
-      { label: 'Accreditations  ', styleClass: 'lg:col-4 p-0',route:'/accreditations' },
+      { label: 'Who we are (About Us)', styleClass: 'lg:col-4 p-0', route: '/about-alfa' },
+      { label: 'Vision, Mission ', styleClass: 'lg:col-4 p-0', route: '/mission-and-vision' },
+      { label: 'Core Values', styleClass: 'lg:col-4 p-0', route: '/core-values' },
+      { label: 'Sustainability ', styleClass: 'lg:col-4 p-0', route: '/environmental-responsibility' },
+      { label: 'Accreditations  ', styleClass: 'lg:col-4 p-0', route: '/accreditations' },
       { label: 'Ethics & Compliance', styleClass: 'lg:col-4 p-0', route: '/ethics-and-compliance' },
       { label: 'Environmental Responsibility', styleClass: 'lg:col-4 p-0', route: '/environmental-responsibility' },
       { label: 'HSE Policy', styleClass: 'lg:col-4 p-0', route: '/health-safety-environmental-policy' },
@@ -34,5 +34,19 @@ export class FooterComponent implements OnInit {
       { label: 'Join Our Team', styleClass: 'lg:col-4 p-0', route: '/careers' },
       { label: 'Download Center', styleClass: 'lg:col-4 p-0', route: '/downloads' },
     ];
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  ngOnDestroy() {
+    window.removeEventListener('scroll', this.toggleScrollToTopButton);
+  }
+  toggleScrollToTopButton() {
+    const scrollToTopButton = document.getElementById('scrollToTopButton');
+    if (window.scrollY > 200) {
+      scrollToTopButton!.style.display = 'block';
+    } else {
+      scrollToTopButton!.style.display = 'none';
+    }
   }
 }
