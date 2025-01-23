@@ -56,10 +56,15 @@ li {
     font-family: "Roboto", sans-serif;
 }
 .submit {
-    background: #43b4e3;
+    background: var(--secondaryclr);
     color: #fff;
     border: 1px solid #e6e6e6;
     font-family: "Roboto", sans-serif;
     padding: 10px 25px;
     transition: all 0.3s ease 0s;
+}
+
+.submit:hover{
+    background: var(--primaryclr);
+
 }

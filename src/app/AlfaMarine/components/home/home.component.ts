@@ -11,11 +11,12 @@ import { NewsLatestSectionComponent } from './news-latest-section/news-latest-se
 import { trigger, transition, style, animate } from '@angular/animations';
 import { RouterModule } from '@angular/router';
 import { OurClientsComponent } from '../our-clients/our-clients.component';
+import { LeadershipSectionComponent } from '../leadership-section/leadership-section.component';
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [NavbarComponent, FooterComponent, CommonModule, TabsModule, BusinessSectionComponent, LatestProjectsComponent,
-    CareersSectionComponent, QhseWorldSectionComponent, NewsLatestSectionComponent,OurClientsComponent,RouterModule
+    CareersSectionComponent, QhseWorldSectionComponent,LeadershipSectionComponent, NewsLatestSectionComponent,OurClientsComponent,RouterModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

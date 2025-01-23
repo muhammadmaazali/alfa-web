@@ -3,11 +3,12 @@ import { MainMenuComponent } from '../navbar/main-menu/main-menu.component';
 import { MenuItem } from 'primeng/api';
 import { Menubar } from 'primeng/menubar';
 import { MenuItemContent } from 'primeng/menu';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [MainMenuComponent, MenuItemContent, Menubar,],
+  imports: [MainMenuComponent, MenuItemContent, Menubar,RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
@@ -30,7 +31,7 @@ export class FooterComponent implements OnInit {
       { label: 'Environmental Responsibility', styleClass: 'lg:col-4 p-0', route: '/environmental-responsibility' },
       { label: 'HSE Policy', styleClass: 'lg:col-4 p-0', route: '/health-safety-environmental-policy' },
       { label: 'Contact us', styleClass: 'lg:col-4 p-0', route: '/contact-us' },
-      { label: 'Join Our Team (Career)', styleClass: 'lg:col-4 p-0', route: '/careers' },
+      { label: 'Join Our Team', styleClass: 'lg:col-4 p-0', route: '/careers' },
       { label: 'Download Center', styleClass: 'lg:col-4 p-0', route: '/downloads' },
     ];
   }
