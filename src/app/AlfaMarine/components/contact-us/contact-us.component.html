@@ -10,7 +10,94 @@
                     form
                     below and we will get back to you shortly. We appreciate your interest.</div>
 
-                <div class="contact grid">
+                <form class="contact grid" [formGroup]="contactForm">
+                    <div class="col-12 lg:col-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name *"
+                                formControlName="firstName" />
+                            <div class="help-block with-errors"
+                                *ngIf="contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid">
+                                <span *ngIf="contactForm.get('firstName')?.errors?.required"
+                                    style="color:#CC3300;">Please enter your first name.</span>
+                                <span *ngIf="contactForm.get('firstName')?.errors?.maxlength"
+                                    style="color:#CC3300;">First name cannot exceed 50 characters.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 lg:col-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name *"
+                                formControlName="lastName" />
+                            <div class="help-block with-errors"
+                                *ngIf="contactForm.get('lastName')?.touched && contactForm.get('lastName')?.invalid">
+                                <span *ngIf="contactForm.get('lastName')?.errors?.required"
+                                    style="color:#CC3300;">Please enter your last name.</span>
+                                <span *ngIf="contactForm.get('lastName')?.errors?.maxlength" style="color:#CC3300;">Last
+                                    name cannot exceed 50 characters.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 lg:col-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Business Email *"
+                                formControlName="email" />
+                            <div class="help-block with-errors"
+                                *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+                                <span *ngIf="contactForm.get('email')?.errors?.required" style="color:#CC3300;">Please
+                                    enter your email.</span>
+                                <span *ngIf="contactForm.get('email')?.errors?.email" style="color:#CC3300;">Please
+                                    enter a valid email.</span>
+                                <span *ngIf="contactForm.get('email')?.errors?.maxlength" style="color:#CC3300;">Email
+                                    cannot exceed 50 characters.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 lg:col-6">
+                        <div class="form-group">
+                            <div class="styled-select">
+                                <select class="form-control" formControlName="inquiry">
+                                    <option value="">Select Inquiries</option>
+                                    <option value="1133">Suppliers</option>
+                                </select>
+                            </div>
+                            <div class="help-block with-errors"
+                                *ngIf="contactForm.get('inquiry')?.touched && contactForm.get('inquiry')?.invalid">
+                                <span style="color:#CC3300;">Please select inquiries.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <input type="text" id="cphBaseBodySubPageContent_txtCompany" class="form-control"
+                                placeholder="Company" formControlName="company" />
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <textarea placeholder="Tell us more about yourself *" class="form-control"
+                                formControlName="message"></textarea>
+                            <div class="help-block with-errors"
+                                *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+                                <span *ngIf="contactForm.get('message')?.errors?.required" style="color:#CC3300;">Please
+                                    leave us a message.</span>
+                                <span *ngIf="contactForm.get('message')?.errors?.maxlength"
+                                    style="color:#CC3300;">Message cannot exceed 500 characters.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 my-4">
+                        <button type="button" class="submit" (click)="onSubmit()">Send Message</button>
+                    </div>
+                </form>
+
+
+                <!-- <div class="contact grid">
                     <div class="col-12 lg:col-6">
                         <div class="form-group">
                             <input type="text" maxlength="50" class="form-control" placeholder="First Name *">
@@ -75,7 +162,7 @@
                     <div class="col-12 my-4">
                         <input type="submit" value="Send Message" class="submit">
                     </div>
-                </div>
+                </div> -->
                 <div class="clearfix"></div>
             </div>
             <div class="col-md-4 video-column xl:pt-8 xl:mt-3">
