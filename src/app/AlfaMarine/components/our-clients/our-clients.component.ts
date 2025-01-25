@@ -17,7 +17,7 @@ export class OurClientsComponent {
     { image: 'assets/ALFA LOGO/Client Logos/6.jpeg', },
     { image: 'assets/ALFA LOGO/Client Logos/7.png', },
     { image: 'assets/ALFA LOGO/Client Logos/8.png', },
-    { image: 'assets/ALFA LOGO/Client Logos/9.png', },
+    // { image: 'assets/ALFA LOGO/Client Logos/9.png', },
     { image: 'assets/ALFA LOGO/Client Logos/10.png', },
     { image: 'assets/ALFA LOGO/Client Logos/11.png', },
     { image: 'assets/ALFA LOGO/Client Logos/12.png', },
@@ -28,7 +28,7 @@ export class OurClientsComponent {
     { image: 'assets/ALFA LOGO/Client Logos/17.jpg', },
     { image: 'assets/ALFA LOGO/Client Logos/18.png', },
     { image: 'assets/ALFA LOGO/Client Logos/19.png', },
-    { image: 'assets/ALFA LOGO/Client Logos/20.png', },
+    // { image: 'assets/ALFA LOGO/Client Logos/20.png', },
   ];
 
   carouselOptions = {

@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
     window.addEventListener('scroll', this.toggleScrollToTopButton);
     this.items = [
       // { label: 'Home' ,route:'/home'},
-      { label: 'Who we are (About Us)', styleClass: 'lg:col-4 p-0', route: '/about-alfa' },
+      { label: 'About Us', styleClass: 'lg:col-4 p-0', route: '/about-alfa' },
       { label: 'Vision, Mission ', styleClass: 'lg:col-4 p-0', route: '/mission-and-vision' },
       { label: 'Core Values', styleClass: 'lg:col-4 p-0', route: '/core-values' },
       { label: 'Sustainability ', styleClass: 'lg:col-4 p-0', route: '/environmental-responsibility' },

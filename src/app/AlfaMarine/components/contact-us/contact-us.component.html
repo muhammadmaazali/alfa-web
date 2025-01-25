@@ -54,18 +54,19 @@
                         </div>
                     </div>
 
-                    <div class="col-12 lg:col-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                    <div class="col-12 lg:col-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                         <div class="form-group">
-                            <div class="styled-select">
-                                <select class="form-control" formControlName="inquiry">
-                                    <option value="">Select Inquiries</option>
-                                    <option value="1133">Suppliers</option>
-                                </select>
-                            </div>
-                            <div class="help-block with-errors"
-                                *ngIf="contactForm.get('inquiry')?.touched && contactForm.get('inquiry')?.invalid">
-                                <span style="color:#CC3300;">Please select inquiries.</span>
-                            </div>
+                            <input type="number" maxlength="15" class="form-control" placeholder="Contact Number"
+                                formControlName="email" />
+                            <!-- <div class="help-block with-errors"
+                                *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+                                <span *ngIf="contactForm.get('email')?.errors?.required" style="color:#CC3300;">Please
+                                    enter your email.</span>
+                                <span *ngIf="contactForm.get('email')?.errors?.email" style="color:#CC3300;">Please
+                                    enter a valid email.</span>
+                                <span *ngIf="contactForm.get('email')?.errors?.maxlength" style="color:#CC3300;">Email
+                                    cannot exceed 50 characters.</span>
+                            </div> -->
                         </div>
                     </div>
 

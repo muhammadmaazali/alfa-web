@@ -29,13 +29,13 @@ export class MainMenuComponent implements OnInit {
             { label: 'About Us	', route: '/about-alfa' },
             { label: 'Mission and Vision', route: '/mission-and-vision' },
             { label: 'Core Values', route: '/core-values' },
-            { label: 'Leadership', route: '/leadership' },
+            { label: 'Leadership' },
             { label: 'Our Culture', route: '/our-culture' },
-            { label: 'Our Offices and Facilities', route: '/our-offices-and-facilities' },
+            { label: 'Our Offices and Facilities' },
             { label: 'Our Strategy ', route: '/our-strategy' },
             { label: 'Our clients ', route: '/our-clients' },
-            { label: 'Our Milestones', route: '/our-milestones' },
-            { label: 'Ethics and Compliance ', route: '/ethics-and-compliance' },
+            { label: 'Our Milestones',  },
+            { label: 'Ethics and Compliance ',  },
             { label: 'Accreditations  ', route: '/accreditations' },
           ]
       },
@@ -66,7 +66,7 @@ export class MainMenuComponent implements OnInit {
             { label: 'Our Product / Supplies', route: '/our-product-or-supplies' },
           ],
       },
-      { label: 'Projects', route: '/projects' },
+      { label: 'Projects' },
       {
         label: 'Sustainability ',
         items:
