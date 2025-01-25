@@ -28,6 +28,8 @@ import { SPEAKUPComponent } from './AlfaMarine/components/speakup/speakup.compon
 import { DownloadComponent } from './AlfaMarine/components/download/download.component';
 import { ContactUsComponent } from './AlfaMarine/components/contact-us/contact-us.component';
 import { OurClientsComponent } from './AlfaMarine/components/our-clients/our-clients.component';
+import { PrivacyPolicyComponent } from './AlphaMarine/components/privacy-policy/privacy-policy.component';
+import { TermAndServiceComponent } from './AlphaMarine/components/term-and-service/term-and-service.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -37,6 +39,7 @@ export const routes: Routes = [
     { path: 'about-alfa', component: AboutAlfaComponent },
     { path: 'mission-and-vision', component: MissionAndVisionComponent },
     { path: 'core-values', component: CoreValuesComponent },
+    { path: 'landing-page', component: LandingPageComponent },
     { path: 'leadership', component: LeadershipComponent },
     { path: 'our-culture', component: OurCultureComponent },
     { path: 'our-strategy', component: OurStrategyComponent },
@@ -65,4 +68,6 @@ export const routes: Routes = [
     { path: 'our-clients', component: OurClientsComponent },
     { path: 'our-offices-and-facilities', component: OurProductSuppliesComponent },
     { path: 'projects', component: OurProductSuppliesComponent },
+    { path: 'privacy-policy', component: PrivacyPolicyComponent },
+    { path: 'term-and-service', component: TermAndServiceComponent },
 ];

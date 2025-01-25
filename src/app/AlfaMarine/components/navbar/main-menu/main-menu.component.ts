@@ -59,7 +59,7 @@ export class MainMenuComponent implements OnInit {
                 [
                   { label: '  Welding And Fabrication Services', route: '/welding-and-fabrication-services' },
                   { label: ' Abrasive Blasting and Painting Services  ', route: '/abrasive-blasting-and-painting-services' },
-                  { label: '•	Architectural, HVAC, Electrical, Plumbing, & Carpentry Services', route: '/architectural-hvac-electrical' },
+                  { label: 'Architectural, HVAC, Electrical, Plumbing, & Carpentry Services', route: '/architectural-hvac-electrical' },
                   { label: ' Thermal And Acoustic Insulation Services ', route: '/thermal-and-acoustic-insulation-services' },
                 ]
             },

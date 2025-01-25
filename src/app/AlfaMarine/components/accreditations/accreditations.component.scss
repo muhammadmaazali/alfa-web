@@ -1,0 +1,36 @@
+.item {
+    // width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .item img {
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    width: 90%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+  }
+  
+  .item:hover img {
+    transform: scale(1.2); /* Zoom out effect */
+  }
+  ::ng-deep .owl-item.ng-trigger.ng-trigger-autoHeight {
+    width: 200px !important;
+    height: 200px !important;
+    margin-right: 5em !important;
+    display: flex !important;
+    margin-bottom: 2em !important;
+    align-items: center !important;
+  }
+  .item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  

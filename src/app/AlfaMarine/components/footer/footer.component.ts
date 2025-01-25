@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [MainMenuComponent, MenuItemContent, Menubar,RouterModule],
+  imports: [MainMenuComponent, MenuItemContent, Menubar, RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

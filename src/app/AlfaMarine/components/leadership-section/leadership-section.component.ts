@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-leadership-section',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './leadership-section.component.html',
   styleUrl: './leadership-section.component.scss'
 })
