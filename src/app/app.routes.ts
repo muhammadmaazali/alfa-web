@@ -32,7 +32,9 @@ import { PrivacyPolicyComponent } from './AlphaMarine/components/privacy-policy/
 import { TermAndServiceComponent } from './AlphaMarine/components/term-and-service/term-and-service.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', component: LandingPageComponent },
+    // { path: 'landing-page', component: LandingPageComponent },
+
     { path: 'home', component: HomeComponent },
     { path: 'commercial-inquiries', component: CommercialInquiriesComponent },
     { path: 'become-a-supplier', component: BecomeASupplierComponent },

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { PrimeNgModule } from './shared/prime-ng/prime-ng.module';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { NavbarComponent } from './AlfaMarine/components/navbar/navbar.component';
@@ -19,9 +19,17 @@ export class AppComponent {
 
   title = 'alfa-marine ';
   visible: boolean = true;
-  constructor(public dialogService: DialogService) { }
+  isLandingPage: boolean = false;
+
+  constructor(public dialogService: DialogService, private router: Router) { }
 
   ngOnInit() {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        // Check if the current route is the landing page
+        this.isLandingPage = event.url === '/' || event.url === '/landing'; // Adjust based on your landing route
+      }
+    });
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
@@ -30,6 +38,5 @@ export class AppComponent {
 
     });
   }
-
   ref: DynamicDialogRef | undefined;
 }
