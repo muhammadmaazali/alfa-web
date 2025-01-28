@@ -27,15 +27,15 @@ export class MainMenuComponent implements OnInit {
         items:
           [
             { label: 'About Us	', route: '/about-alfa' },
-            { label: 'Mission and Vision', route: '/mission-and-vision' },
+            { label: 'Mission & Vision', route: '/mission-and-vision' },
             { label: 'Core Values', route: '/core-values' },
             { label: 'Leadership' },
             { label: 'Our Culture', route: '/our-culture' },
-            { label: 'Our Offices and Facilities' },
+            { label: 'Our Offices & Facilities' },
             { label: 'Our Strategy ', route: '/our-strategy' },
             { label: 'Our clients ', route: '/our-clients' },
             { label: 'Our Milestones',  },
-            { label: 'Ethics and Compliance ',  },
+            { label: 'Ethics & Compliance ',  },
             { label: 'Accreditations  ', route: '/accreditations' },
           ]
       },
@@ -57,10 +57,10 @@ export class MainMenuComponent implements OnInit {
               label: 'Our Services',
               items:
                 [
-                  { label: '  Welding And Fabrication Services', route: '/welding-and-fabrication-services' },
-                  { label: ' Abrasive Blasting and Painting Services  ', route: '/abrasive-blasting-and-painting-services' },
+                  { label: '  Welding & Fabrication Services', route: '/welding-and-fabrication-services' },
+                  { label: ' Abrasive Blasting & Painting Services  ', route: '/abrasive-blasting-and-painting-services' },
                   { label: 'Architectural, HVAC, Electrical, Plumbing, & Carpentry Services', route: '/architectural-hvac-electrical' },
-                  { label: ' Thermal And Acoustic Insulation Services ', route: '/thermal-and-acoustic-insulation-services' },
+                  { label: ' Thermal & Acoustic Insulation Services ', route: '/thermal-and-acoustic-insulation-services' },
                 ]
             },
             { label: 'Our Product / Supplies', route: '/our-product-or-supplies' },
