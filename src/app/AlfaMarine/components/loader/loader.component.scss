@@ -5,6 +5,9 @@
     min-height: 200px;
     background: #0f172a;
     height:100vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 99999;
   }
 
   .circle {

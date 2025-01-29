@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { RouterModule } from '@angular/router';

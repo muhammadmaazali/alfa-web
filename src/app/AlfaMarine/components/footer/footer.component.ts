@@ -16,7 +16,11 @@ import { RouterModule } from '@angular/router';
 export class FooterComponent implements OnInit {
   items: MenuItem[] | undefined;
 
+  currentYear: number;
 
+  // ngOnInit(): void {
+   
+  // }
 
   ngOnInit() {
     window.addEventListener('scroll', this.toggleScrollToTopButton);
@@ -34,6 +38,8 @@ export class FooterComponent implements OnInit {
       { label: 'Join Our Team', styleClass: 'lg:col-4 p-0', route: '/careers' },
       { label: 'Download Center', styleClass: 'lg:col-4 p-0', route: '/downloads' },
     ];
+    const currentDate = new Date();
+    this.currentYear = currentDate.getFullYear();
   }
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -44,7 +50,7 @@ export class FooterComponent implements OnInit {
   toggleScrollToTopButton() {
     const scrollToTopButton = document.getElementById('scrollToTopButton');
     if (window.scrollY > 150) {
-      scrollToTopButton!.style.display = 'block';
+      scrollToTopButton!.style.display = 'flex';
     } else {
       scrollToTopButton!.style.display = 'none';
     }

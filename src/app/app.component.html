@@ -1,7 +1,8 @@
+<app-loader *ngIf="loaderService.isLoading"></app-loader>
 <ng-container *ngIf="!isLandingPage">
-    <app-navbar [@fadeIn]></app-navbar>
-  </ng-container>
-  <router-outlet></router-outlet>
-  <ng-container *ngIf="!isLandingPage">
-    <app-footer></app-footer>
-  </ng-container>
+  <app-navbar [@fadeIn]></app-navbar>
+</ng-container>
+<router-outlet></router-outlet>
+<ng-container *ngIf="!isLandingPage">
+  <app-footer></app-footer>
+</ng-container>

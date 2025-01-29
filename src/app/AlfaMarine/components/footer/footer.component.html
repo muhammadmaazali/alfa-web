@@ -82,7 +82,7 @@
                 <div class="col-12">
                     <div class="flex flex-column xl:flex-row gap-3 lg:justify-content-between">
                         <p class="mb-0 text-xs text-white">
-                            Copyright © 2025-2030 All rights reserved by ALFA Marine
+                            Copyright © {{currentYear}} All rights reserved by ALFA Marine
                         </p>
                         <div class="flex gap-3 text-xs">
                             <a routerLink="/privacy-policy" class="text-decoration-underline">Privacy Policy</a>
@@ -92,20 +92,14 @@
                 </div>
             </div>
         </div>
-        <button (click)="scrollToTop()" class="scroll-to-top" style="width: 40px; display: none;"
+        <button (click)="scrollToTop()" class="scroll-to-top" style="display: none;"
             id="scrollToTopButton">
-            <svg id="Layer_1" class="footer-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 400 200">
-                <!-- <defs>
-                    <style>
-                        .cls-1 {
-                            fill: #3095d2;
-                        }
-                    </style>
-                </defs>  -->
-                <path class="cls-1"
-                    d="M11.16,143.73Q93.45,92.79,175.28,41c5.83-3.69,9.74-2.83,15,.42Q273,92.83,356,143.74l7.57,4.63V63.17c-28.45-9.38-56.14-18.48-83.81-27.65C250,25.63,220.1,15.81,190.35,5.64a23.77,23.77,0,0,0-16.13,0q-80,26.21-160.13,52c-3.31,1.07-6.66,2-10.49,3.16v87.56S6.64,146.53,11.16,143.73Z" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="footer-svg"
+                viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
             </svg>
+            
         </button>
     </div>
 </footer>

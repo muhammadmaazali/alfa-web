@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
@@ -12,11 +12,13 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import { RouterModule } from '@angular/router';
 import { OurClientsComponent } from '../our-clients/our-clients.component';
 import { LeadershipSectionComponent } from '../leadership-section/leadership-section.component';
+import { LoaderComponent } from '../loader/loader.component';
+import { LoaderService } from '../../../shared/loader.service';
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [NavbarComponent, FooterComponent, CommonModule, TabsModule, BusinessSectionComponent, LatestProjectsComponent,
-    CareersSectionComponent, QhseWorldSectionComponent,LeadershipSectionComponent, NewsLatestSectionComponent,OurClientsComponent,RouterModule
+    CareersSectionComponent, QhseWorldSectionComponent, LoaderComponent, LeadershipSectionComponent, NewsLatestSectionComponent, OurClientsComponent, RouterModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -29,6 +31,13 @@ import { LeadershipSectionComponent } from '../leadership-section/leadership-sec
     ])
   ]
 })
-export class HomeComponent {
-
+export class HomeComponent implements OnInit {
+  constructor(private loaderService: LoaderService) { }
+  isLoading = true;
+  ngOnInit(): void {
+    this.loaderService.isLoading = true;
+    setTimeout(() => {
+      this.loaderService.isLoading = false;
+    }, 2000);
+  }
 }
