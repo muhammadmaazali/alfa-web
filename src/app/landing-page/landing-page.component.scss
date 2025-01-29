@@ -109,15 +109,6 @@ h1.outline_head {
     color: #f7b13d !important;
 }
 
-// .right .button {
-//     color: #000;
-// }
-//
-// .right .button:hover {
-//     background: #f7b13d;
-//     color: #fff;
-// }
-
 .play-reel {
     position: absolute;
     top: 20px;
@@ -127,19 +118,12 @@ h1.outline_head {
     text-transform: uppercase;
     text-decoration: none;
 }
-
-// body {
-//     margin: 0;
-//     padding: 0;
-//     font-family: Arial, sans-serif;
-// }
-
 /* Split Screen Layout */
 .split-screen {
     height: 100vh;
     display: flex;
     position: relative;
-    overflow: hidden; /* Ensure the arrow doesn't overflow */
+    overflow: hidden;
     background-color: #21396e;
 }
 
@@ -152,7 +136,6 @@ h1.outline_head {
 }
 
 .left-section {
-    // background-image: url("https://plus.unsplash.com/premium_photo-1661882520489-a3e2029aca9f?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-image: url("../../assets/images/split-1-Marine\ &\ Offshore\ Division.jpg");
 
     -webkit-clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
@@ -160,7 +143,6 @@ h1.outline_head {
 }
 
 .right-section {
-    // background-image: url("https://plus.unsplash.com/premium_photo-1661881928171-1e4b410c009f?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-image: url("../../assets/images/split-2-Construction\ Division.jpg");
 
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
@@ -174,35 +156,15 @@ h1.outline_head {
     align-items: center;
     height: 100%;
     color: white;
-    // text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     font-size: 1.5rem;
     text-align: center;
     flex-direction: column;
 }
 
 .content p {
-    // color: red;
     margin-bottom: 10px;
 }
 
-// .content button {
-//     padding: 10px 20px;
-//     border: none;
-//     background-color: #ffffff;
-//     color: #333;
-//     border-radius: 5px;
-//     cursor: pointer;
-//     transition:
-//         box-shadow 0.3s ease,
-//         background-color 0.3s ease;
-// }
-//
-// .content button:hover {
-//     background-color: #f1f1f1;
-//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-// }
-
-/* Full Arrow Styling */
 .arrow-image {
     margin: 0;
     position: absolute;
@@ -217,7 +179,6 @@ h1.outline_head {
 @media (max-width: 768px) {
     .split-screen {
         flex-direction: column;
-        // height: auto;
     }
 
     /* Adjust Left Section Arrow */
