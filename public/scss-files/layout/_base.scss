@@ -69,12 +69,12 @@
 }
 .txt-description {
     color: black;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     margin: 0;
 }
 .txt-big {
-    font-size: 1.125rem;
+    font-size: 1.12rem;
     line-height: 1.75rem;
     color: black;
     margin: 0;
@@ -104,4 +104,20 @@
 
 .fade-section.visible {
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .ins-heading::before {
+        height: 100px;
+        top: 26px;
+        left: 1rem;
+    }
+    .ins-heading {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+    .ins-heading.sm {
+        margin-bottom: 1rem;
+    }
 }
